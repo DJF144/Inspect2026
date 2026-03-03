@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="x_1909471_inspec_0_device" section_id="84869e0b9393b6100cbd35befaba1043" sys_domain="global" table="x_1909471_inspec_0_device" version="3" view="Test_12345678910">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-03 01:05:00</sys_created_on>
+            <sys_id>8b96924b9393b6100cbd35befaba1046</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_1909471_inspec_0_device" display_value="x_1909471_inspec_0_device" name="x_1909471_inspec_0_device" sys_domain="global" view="04865e0b9393b6100cbd35befaba10e4">84869e0b9393b6100cbd35befaba1043</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-03 01:05:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>x_1909471_inspec_0_device</caption>
+            <header>false</header>
+            <name>x_1909471_inspec_0_device</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-03 01:04:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>84869e0b9393b6100cbd35befaba1043</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1909471_inspec_0_device</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+            <sys_update_name>sys_ui_section_84869e0b9393b6100cbd35befaba1043</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-03 01:04:31</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Test 12345678910" name="Test_12345678910">04865e0b9393b6100cbd35befaba10e4</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
