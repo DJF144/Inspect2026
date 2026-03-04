@@ -4,41 +4,111 @@
             <element>button_1</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-03 01:11:41</sys_created_on>
-            <sys_id>3828da0f9393b6100cbd35befaba10c5</sys_id>
+            <sys_created_on>2026-03-03 04:04:39</sys_created_on>
+            <sys_id>66bf7acb93d7b6100cbd35befaba10ad</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Physical Inspection" display_value="Physical Inspection" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">3028da0f9393b6100cbd35befaba10a3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-03 01:11:41</sys_updated_on>
+            <sys_updated_on>2026-03-03 04:04:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dents</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-03 04:04:39</sys_created_on>
+            <sys_id>e2bf7acb93d7b6100cbd35befaba10ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Physical Inspection" display_value="Physical Inspection" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">3028da0f9393b6100cbd35befaba10a3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-03 04:04:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>charing_port</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-03 04:04:39</sys_created_on>
+            <sys_id>62bf7acb93d7b6100cbd35befaba10af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Physical Inspection" display_value="Physical Inspection" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">3028da0f9393b6100cbd35befaba10a3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-03 04:04:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>upload_document</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-03 04:04:39</sys_created_on>
+            <sys_id>eebf7acb93d7b6100cbd35befaba10af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Physical Inspection" display_value="Physical Inspection" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">3028da0f9393b6100cbd35befaba10a3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-03 04:04:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-03 04:04:39</sys_created_on>
+            <sys_id>6ebf7acb93d7b6100cbd35befaba10b0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Physical Inspection" display_value="Physical Inspection" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">3028da0f9393b6100cbd35befaba10a3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-03 04:04:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>1</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-03 01:11:41</sys_created_on>
-            <sys_id>b428da0f9393b6100cbd35befaba10c6</sys_id>
+            <sys_created_on>2026-03-03 04:04:39</sys_created_on>
+            <sys_id>eabf7acb93d7b6100cbd35befaba10b1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Physical Inspection" display_value="Physical Inspection" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">3028da0f9393b6100cbd35befaba10a3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-03 01:11:41</sys_updated_on>
+            <sys_updated_on>2026-03-03 04:04:39</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>new_field_3</element>
-            <position>2</position>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-03 01:11:41</sys_created_on>
-            <sys_id>3428da0f9393b6100cbd35befaba10c7</sys_id>
+            <sys_created_on>2026-03-03 04:04:39</sys_created_on>
+            <sys_id>6abf7acb93d7b6100cbd35befaba10b2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Physical Inspection" display_value="Physical Inspection" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">3028da0f9393b6100cbd35befaba10a3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-03 01:11:41</sys_updated_on>
+            <sys_updated_on>2026-03-03 04:04:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>headphone_port</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-03 04:04:39</sys_created_on>
+            <sys_id>e6bf7acb93d7b6100cbd35befaba10b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Physical Inspection" display_value="Physical Inspection" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">3028da0f9393b6100cbd35befaba10a3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-03 04:04:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

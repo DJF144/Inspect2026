@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="50221e8f9353b6100cbd35befaba1030" extends="x_1909471_inspec_0_order" label="Device" max_length="40" name="x_1909471_inspec_0_device" type="collection">
-        <element label="Button 1" max_length="40" name="button_1" type="string"/>
-        <element label="New Field 3" max_length="255" name="new_field_3" type="boolean"/>
+        <element label="Screen Condition" max_length="40" name="button_1" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="bad" sequence="3" value="bad"/>
+                <element inactive_on_update="false" label="very good" sequence="0" value="None"/>
+                <element inactive_on_update="false" label="good" sequence="1" value="Small"/>
+                <element inactive_on_update="false" label="okay" sequence="2" value="Medium"/>
+                <element inactive_on_update="false" label="very bad" sequence="4" value="very bad"/>
+            </choice>
+        </element>
+        <element label="Paint Peeling on the casing" max_length="255" name="new_field_3" type="boolean"/>
+        <element label="Upload Document" max_length="255" name="upload_document" type="file_attachment"/>
+        <element label="Charing Port" max_length="40" name="charing_port" type="boolean"/>
+        <element label="Dents" max_length="255" name="dents" type="boolean"/>
         <element label="New Field 2" max_length="255" name="new_field_2" type="boolean"/>
         <element label="New Field 1" max_length="255" name="new_field_1" type="boolean"/>
+        <element label="Headphone Port " max_length="255" name="headphone_port" type="boolean"/>
         <element label="Device Serial Number" mandatory="true" max_length="40" name="device_serial_number" type="string"/>
     </element>
 </database>
