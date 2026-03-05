@@ -2,29 +2,45 @@
     <sys_security_acl action="INSERT_OR_UPDATE">
         <active>true</active>
         <admin_overrides>true</admin_overrides>
-        <advanced>false</advanced>
+        <advanced>true</advanced>
         <applies_to/>
         <condition/>
         <controlled_by_refs/>
         <decision_type>allow</decision_type>
-        <description/>
+        <description>Allow write for records in x_1909471_inspec_0_device, for users with roles (x_1909471_inspec_0.admin, x_1909471_inspec_0.user), and if the ACL script returns true.</description>
         <local_or_existing>Existing</local_or_existing>
         <name>x_1909471_inspec_0_device</name>
         <operation display_value="write">write</operation>
-        <script/>
+        <script><![CDATA[answer = false;
+
+// Full access for application_admin
+if (gs.hasRole('x_1909471_inspec_0.admin')) {
+    answer = true;
+}
+
+// Restricted access for full filler
+else if (gs.hasRole('x_1909471_inspec_0.user')) {
+
+    if (current.isNewRecord()) {
+        answer = true;
+    }
+    else if (current.assigned_to == gs.getUserID()) {
+        answer = true;
+    }
+}]]></script>
         <security_attribute/>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-03-03 00:45:29</sys_created_on>
         <sys_id>59225e8f9353b6100cbd35befaba10b2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>x_1909471_inspec_0_device</sys_name>
         <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
         <sys_policy/>
         <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
         <sys_update_name>sys_security_acl_59225e8f9353b6100cbd35befaba10b2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-03 00:45:29</sys_updated_on>
+        <sys_updated_on>2026-03-04 20:52:28</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>

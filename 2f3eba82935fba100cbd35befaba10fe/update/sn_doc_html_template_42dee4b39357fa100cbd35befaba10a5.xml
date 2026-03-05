@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_doc_html_template">
+    <sn_doc_html_template action="INSERT_OR_UPDATE">
+        <acknowledgement_text/>
+        <active>true</active>
+        <category display_value="PDF Report">ddfb55fb939bfa100cbd35befaba10bc</category>
+        <custom_font/>
+        <end_date/>
+        <footer_image/>
+        <footer_image_height>50</footer_image_height>
+        <footer_image_position>CENTER</footer_image_position>
+        <footnote/>
+        <footnote_position>RIGHT</footnote_position>
+        <footnote_vertical_position>BELOW</footnote_vertical_position>
+        <header_image>06acd133939bfa100cbd35befaba106e</header_image>
+        <header_image_height>50</header_image_height>
+        <header_image_position>CENTER</header_image_position>
+        <html_script_body><![CDATA[<h1 style="text-align: center; color: #1f4e79;">Inspection Report</h1>
+<h3>Order Information</h3>
+<p><strong>Order Number:</strong> ${number}</p>
+<p><strong>Date:</strong> ${sys_created_on}</p>
+<hr>
+<h2>Inspections</h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<!-- Add block manually like this -->]]></html_script_body>
+        <language>en</language>
+        <left_right_margin>36</left_right_margin>
+        <name>PDF Report HTML</name>
+        <page_number_config/>
+        <page_size>LETTER</page_size>
+        <set_signing_order>true</set_signing_order>
+        <signing_type>servicenow_sign</signing_type>
+        <source_template/>
+        <start_date/>
+        <state>draft</state>
+        <sys_class_name>sn_doc_html_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-05 01:32:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>42dee4b39357fa100cbd35befaba10a5</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>PDF Report HTML</sys_name>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_update_name>sn_doc_html_template_42dee4b39357fa100cbd35befaba10a5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-05 18:24:31</sys_updated_on>
+        <table>x_1909471_inspec_0_order</table>
+        <template_date_format/>
+        <toc_config/>
+        <top_bottom_margin>72</top_bottom_margin>
+        <user_criteria/>
+    </sn_doc_html_template>
+    <sys_translated_text action="delete_multiple" query="documentkey=42dee4b39357fa100cbd35befaba10a5"/>
+</record_update>
