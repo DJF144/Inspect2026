@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-12 18:06:58</sys_created_on>
+        <sys_id>fcd6509a93a332100cbd35befaba1007</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GenerateDocumentAPI</sys_name>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_update_name>sys_scope_privilege_fcd6509a93a332100cbd35befaba1007</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-12 18:06:58</sys_updated_on>
+        <target_name>GenerateDocumentAPI</target_name>
+        <target_scope display_value="Document Templates">6a9ea833b763330088d9bc78ee11a88q</target_scope>
+        <target_type>sys_script_include</target_type>
+    </sys_scope_privilege>
+</record_update>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="DELETE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <ih_action>false</ih_action>
+        <internal_name>send_email_with_attachment</internal_name>
+        <label_cache/>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Send email with attachment</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-05 23:41:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6950210093eb7e100cbd35befaba105a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Send email with attachment</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_6950210093eb7e100cbd35befaba105a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-05 23:41:48</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="DELETE" query="documentkey=6950210093eb7e100cbd35befaba105a"/>
+    <sys_variable_value action="DELETE" query="document_key=6950210093eb7e100cbd35befaba105a"/>
+    <sys_hub_step_instance action="DELETE" query="action=6950210093eb7e100cbd35befaba105a"/>
+    <sys_hub_action_input action="DELETE" query="model=6950210093eb7e100cbd35befaba105a"/>
+    <sys_hub_action_output action="DELETE" query="model=6950210093eb7e100cbd35befaba105a"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=6950210093eb7e100cbd35befaba105a"/>
+    <sys_hub_action_status_metadata action="DELETE" query="action_type_id=6950210093eb7e100cbd35befaba105a"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_action_input_6950210093eb7e100cbd35befaba105a"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_action_output_6950210093eb7e100cbd35befaba105a"/>
+    <sys_hub_action_plan action="DELETE" query="action_id=6950210093eb7e100cbd35befaba105a"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</application>
+        <file_path/>
+        <instance_id>36a568f1eb15aa5ccbdefceacad0cd7b</instance_id>
+        <instance_name>dev341845</instance_name>
+        <name>sys_hub_action_type_definition_6950210093eb7e100cbd35befaba105a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition"><sys_hub_action_type_definition action="INSERT_OR_UPDATE"><access>public</access><acls/><action_status/><action_template/><active>true</active><annotation/><attributes>{labelCacheCleanUpExecuted=true}</attributes><authored_on_release_version>28100</authored_on_release_version><callable_by_client_api>false</callable_by_client_api><category/><compiler_build/><copied_from/><copied_from_name/><description/><flow_priority/><ih_action>false</ih_action><internal_name>send_email_with_attachment</internal_name><label_cache/><latest_snapshot/><master_snapshot/><master_snapshot_digest/><name>Send email with attachment</name><natlang/><outputs/><pre_compiled>false</pre_compiled><state>draft</state><sys_class_name>sys_hub_action_type_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-05 23:41:48</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>6950210093eb7e100cbd35befaba105a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Send email with attachment</sys_name><sys_overrides/><sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package><sys_policy/><sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope><sys_update_name>sys_hub_action_type_definition_6950210093eb7e100cbd35befaba105a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-05 23:41:48</sys_updated_on><system_level>false</system_level><type/></sys_hub_action_type_definition><sys_translated_text action="delete_multiple" query="documentkey=6950210093eb7e100cbd35befaba105a"/><sys_variable_value action="delete_multiple" query="document_key=6950210093eb7e100cbd35befaba105a"/><sys_hub_step_instance action="delete_multiple" query="action=6950210093eb7e100cbd35befaba105a"/><sys_hub_action_input action="delete_multiple" query="model=6950210093eb7e100cbd35befaba105a"/><sys_hub_action_output action="delete_multiple" query="model=6950210093eb7e100cbd35befaba105a"/><sys_hub_pill_compound action="delete_multiple" query="attached_to=6950210093eb7e100cbd35befaba105a"/><sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=6950210093eb7e100cbd35befaba105a"/><sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_6950210093eb7e100cbd35befaba105a"/><sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_6950210093eb7e100cbd35befaba105a"/><sys_hub_action_plan action="delete_multiple" query="action_id=6950210093eb7e100cbd35befaba105a"/></record_update>]]></payload>
+        <payload_hash>2039137548</payload_hash>
+        <record_name>Send email with attachment</record_name>
+        <reverted_from/>
+        <source>32f6be9a935732100cbd35befaba1083</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-05 23:41:48</sys_created_on>
+        <sys_id>6d50610093eb7e100cbd35befaba108e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19cc06101540000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-05 23:41:48</sys_updated_on>
+        <type>Action Type</type>
+        <update_guid>a9506100e0eb7e101c3ccde4906dc28d</update_guid>
+        <update_guid_history>a9506100e0eb7e101c3ccde4906dc28d:2039137548</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-16 18:27:44</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_action_type_definition">sys_hub_action_type_definition</sys_db_object>
+        <sys_id>2e44c76a60354dd09a2edae6f0820284</sys_id>
+        <sys_metadata>6950210093eb7e100cbd35befaba105a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Send email with attachment</sys_name>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_scope_delete display_value="">446d1859cdca4f34a7ecc80b8969d661</sys_scope_delete>
+        <sys_update_name>sys_hub_action_type_definition_6950210093eb7e100cbd35befaba105a</sys_update_name>
+        <sys_update_version display_value="sys_hub_action_type_definition_6950210093eb7e100cbd35befaba105a">6d50610093eb7e100cbd35befaba108e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-16 18:27:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

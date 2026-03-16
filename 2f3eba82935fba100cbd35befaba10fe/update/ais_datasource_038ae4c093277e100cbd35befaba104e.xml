@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_datasource">
+    <ais_datasource action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conflict>false</conflict>
+        <filter/>
+        <force_late_binding>false</force_late_binding>
+        <name>Order Table</name>
+        <retention_policy display_value="Two years">04f129e57792f010be280d892c5a99d9</retention_policy>
+        <source>x_1909471_inspec_0_order</source>
+        <sys_class_name>ais_datasource</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-05 19:46:48</sys_created_on>
+        <sys_id>038ae4c093277e100cbd35befaba104e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Order Table</sys_name>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_update_name>ais_datasource_038ae4c093277e100cbd35befaba104e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-05 19:46:49</sys_updated_on>
+        <type>internal</type>
+    </ais_datasource>
+</record_update>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="c49a28c093277e100cbd35befaba10ac" sys_domain="global" table="x_1909471_inspec_0_device" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-05 19:46:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>089a68c093277e100cbd35befaba104c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1909471_inspec_0_device" name="x_1909471_inspec_0_device" sys_domain="global" view="e18ae0c0db277e10b66d416bedcb818d">c49a28c093277e100cbd35befaba10ac</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_1909471_inspec_0_device" sys_domain="global" view="e18ae0c0db277e10b66d416bedcb818d">049a28c093277e100cbd35befaba10b3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-05 19:46:52</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-05 19:46:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c09a68c093277e100cbd35befaba1066</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1909471_inspec_0_device" name="x_1909471_inspec_0_device" sys_domain="global" view="e18ae0c0db277e10b66d416bedcb818d">c49a28c093277e100cbd35befaba10ac</sys_ui_form>
+            <sys_ui_section caption="Physical Inspection" display_value="Physical Inspection" name="x_1909471_inspec_0_device" sys_domain="global" view="e18ae0c0db277e10b66d416bedcb818d">8c9a68c093277e100cbd35befaba1063</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-05 19:46:52</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-05 19:46:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>009a68c093277e100cbd35befaba107e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1909471_inspec_0_device" name="x_1909471_inspec_0_device" sys_domain="global" view="e18ae0c0db277e10b66d416bedcb818d">c49a28c093277e100cbd35befaba10ac</sys_ui_form>
+            <sys_ui_section caption="Functional Test" display_value="Functional Test" name="x_1909471_inspec_0_device" sys_domain="global" view="e18ae0c0db277e10b66d416bedcb818d">4c9a68c093277e100cbd35befaba107b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-05 19:46:52</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_1909471_inspec_0_device</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-05 19:46:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c49a28c093277e100cbd35befaba10ac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1909471_inspec_0_device</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+            <sys_update_name>sys_ui_form_sections_c49a28c093277e100cbd35befaba10ac</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-05 19:46:52</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace Inspect 2026 0" name="workspace-inspect-2026-0">e18ae0c0db277e10b66d416bedcb818d</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

@@ -15,38 +15,54 @@
         <header_image_height>50</header_image_height>
         <header_image_position>CENTER</header_image_position>
         <html_script_body><![CDATA[<h1 style="text-align: center; color: #1f4e79;">Inspection Report</h1>
-<h3>Order Information</h3>
-<p><strong>Order Number:</strong> ${number}</p>
-<p><strong>Date:</strong> ${sys_created_on}</p>
-<hr>
+<h3>&nbsp;</h3>
+<h3><span style="font-size: 12pt;">Order</span> <span style="font-size: 12pt;">Information</span></h3>
+<p>Number: ${parent.number}</p>
+<p>Assigned to: ${parent.assigned_to}</p>
+<p>&nbsp;</p>
 <h2>Inspections</h2>
+<p>Device Serial Number: ${device_serial_number}</p>
+<p>Dents: ${dents}</p>
+<p>Paint Peeling on the casing: ${new_field_3}</p>
+<p>Upload Document: ${upload_document}</p>
+<p>Screen Condition: ${button_1}</p>
+<p>Headphone Port : ${headphone_port}</p>
 <p>&nbsp;</p>
+<p>${upload_picture}</p>
 <p>&nbsp;</p>
+<p><img src="/sys_attachment.do?sys_id=${pictures_added}" width="300"></p>
+<p><img src="/sys_attachment.do?sys_id=${pictures_added}" width="300"></p>
+<p><img src="/sys_attachment.do?sys_id=${pictures_added}" width="300"></p>
+<p><img src="/sys_attachment.do?sys_id=${pictures_added}" width="300"></p>
+<p>Upload Picture: ${upload_picture}</p>
+<p>url_list_pictures: ${pictures_added}</p>
 <!-- Add block manually like this -->]]></html_script_body>
         <language>en</language>
         <left_right_margin>36</left_right_margin>
         <name>PDF Report HTML</name>
-        <page_number_config/>
+        <owner/>
+        <page_number_config display_value="Default">afd4fc91c7023010da58d25827c26092</page_number_config>
         <page_size>LETTER</page_size>
         <set_signing_order>true</set_signing_order>
         <signing_type>servicenow_sign</signing_type>
         <source_template/>
         <start_date/>
         <state>draft</state>
+        <storage_destination>attachment</storage_destination>
         <sys_class_name>sn_doc_html_template</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-03-05 01:32:47</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>42dee4b39357fa100cbd35befaba10a5</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_name>PDF Report HTML</sys_name>
         <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
         <sys_policy/>
         <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
         <sys_update_name>sn_doc_html_template_42dee4b39357fa100cbd35befaba10a5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-05 18:24:31</sys_updated_on>
-        <table>x_1909471_inspec_0_order</table>
+        <sys_updated_on>2026-03-13 21:45:59</sys_updated_on>
+        <table>x_1909471_inspec_0_device</table>
         <template_date_format/>
         <toc_config/>
         <top_bottom_margin>72</top_bottom_margin>

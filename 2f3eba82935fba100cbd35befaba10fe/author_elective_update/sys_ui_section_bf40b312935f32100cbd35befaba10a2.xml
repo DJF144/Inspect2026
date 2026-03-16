@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="" section_id="bf40b312935f32100cbd35befaba10a2" sys_domain="global" table="x_1909471_inspec_0_device_2026" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>parent</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-03 00:49:37</sys_created_on>
+            <sys_id>3d13d2439393b6100cbd35befaba102d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1909471_inspec_0_device_2026" sys_domain="global" view="Default view">bf40b312935f32100cbd35befaba10a2</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-03 00:49:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-03 00:49:37</sys_created_on>
+            <sys_id>b913d2439393b6100cbd35befaba102e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1909471_inspec_0_device_2026" sys_domain="global" view="Default view">bf40b312935f32100cbd35befaba10a2</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-03 00:49:37</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>device_serial_number</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-03 00:49:37</sys_created_on>
+            <sys_id>3913d2439393b6100cbd35befaba102f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1909471_inspec_0_device_2026" sys_domain="global" view="Default view">bf40b312935f32100cbd35befaba10a2</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-03 00:49:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption/>
+            <header>false</header>
+            <name>x_1909471_inspec_0_device_2026</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-28 23:41:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bf40b312935f32100cbd35befaba10a2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1909471_inspec_0_device_2026</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+            <sys_update_name>sys_ui_section_bf40b312935f32100cbd35befaba10a2</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-28 23:41:28</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</application>
+        <file_path/>
+        <instance_id>36a568f1eb15aa5ccbdefceacad0cd7b</instance_id>
+        <instance_name>dev341845</instance_name>
+        <name>sys_ui_section_bf40b312935f32100cbd35befaba10a2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="bf40b312935f32100cbd35befaba10a2" sys_domain="global" table="x_1909471_inspec_0_device_2026" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>parent</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-03 00:49:37</sys_created_on><sys_id>3d13d2439393b6100cbd35befaba102d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1909471_inspec_0_device_2026" sys_domain="global" view="Default view">bf40b312935f32100cbd35befaba10a2</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-03 00:49:37</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-03 00:49:37</sys_created_on><sys_id>b913d2439393b6100cbd35befaba102e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1909471_inspec_0_device_2026" sys_domain="global" view="Default view">bf40b312935f32100cbd35befaba10a2</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-03 00:49:37</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>device_serial_number</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-03 00:49:37</sys_created_on><sys_id>3913d2439393b6100cbd35befaba102f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1909471_inspec_0_device_2026" sys_domain="global" view="Default view">bf40b312935f32100cbd35befaba10a2</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-03 00:49:37</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>x_1909471_inspec_0_device_2026</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-02-28 23:41:28</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>bf40b312935f32100cbd35befaba10a2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1909471_inspec_0_device_2026</sys_name><sys_overrides/><sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package><sys_policy/><sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope><sys_update_name>sys_ui_section_bf40b312935f32100cbd35befaba10a2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-02-28 23:41:28</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-1006959543</payload_hash>
+        <record_name>Functional Test</record_name>
+        <reverted_from/>
+        <source>32f6be9a935732100cbd35befaba1083</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-03 00:49:37</sys_created_on>
+        <sys_id>f913d2439393b6100cbd35befaba1033</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19cb12c037e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-03 00:49:37</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>f913d2432593b610acf874b0da6d8d32</update_guid>
+        <update_guid_history>f913d2432593b610acf874b0da6d8d32:-1006959543,ed734243b613b61096720b5c6c853c2f:-2108949063,0672ca8f6ddf761098021d5bc6fef8e5:-1747015239,15128e4f83df7610bf5c495fabc108c0:-2108949063,798e358756df7610ecf392a60541a42d:1577492232,c408314ba29f7610fb7c19fd43029e84:1879668147,dea0fd4b625f7610dc3c58563ee85d06:-275170520,1ea0bd4b3f5f76108ce6aa0b6fe80a78:-370287050</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-05 20:56:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>34fa851dc69e4ceb907e07f5c7705a79</sys_id>
+        <sys_metadata>bf40b312935f32100cbd35befaba10a2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1909471_inspec_0_device_2026</sys_name>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_parent display_value="">2b40b312935f32100cbd35befaba1033</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_scope_delete display_value="">446d1859cdca4f34a7ecc80b8969d661</sys_scope_delete>
+        <sys_update_name>sys_ui_section_bf40b312935f32100cbd35befaba10a2</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_bf40b312935f32100cbd35befaba10a2">f913d2439393b6100cbd35befaba1033</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-05 20:56:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

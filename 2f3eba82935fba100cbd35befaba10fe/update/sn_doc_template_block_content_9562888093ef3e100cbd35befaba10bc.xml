@@ -10,6 +10,7 @@
 <p><strong>Type of Inspection:</strong> ${item_type}</p>
 <p><strong>Date:</strong> ${sys_created_on}</p>
 <p><strong>Technician:</strong> ${assigned_to}</p>
+<p><strong>Device Serial Number: </strong>${device_serial_number}</p>
 <p>&nbsp;</p>
 <hr>]]></body>
         <language>en</language>
@@ -21,14 +22,14 @@
         <sys_created_on>2026-03-05 16:53:51</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>9562888093ef3e100cbd35befaba10bc</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
         <sys_policy/>
         <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
         <sys_update_name>sn_doc_template_block_content_9562888093ef3e100cbd35befaba10bc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-05 17:29:52</sys_updated_on>
+        <sys_updated_on>2026-03-12 18:30:21</sys_updated_on>
     </sn_doc_template_block_content>
     <sys_translated_text action="delete_multiple" query="documentkey=9562888093ef3e100cbd35befaba10bc"/>
 </record_update>

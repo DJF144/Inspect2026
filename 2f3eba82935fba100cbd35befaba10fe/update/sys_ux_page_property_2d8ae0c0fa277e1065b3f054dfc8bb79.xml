@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Tabs Configuration</description>
+        <name>chrome_tab</name>
+        <page display_value="Inspect 2026">a58ae0c02f277e10265d24d5c7c6be98</page>
+        <required_translations>[ {
+  "message" : "New Device",
+  "code" : "",
+  "comment" : ""
+}, {
+  "message" : "New Order",
+  "code" : "",
+  "comment" : ""
+} ]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-05 19:46:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>2d8ae0c0fa277e1065b3f054dfc8bb79</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>chrome_tab</sys_name>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_update_name>sys_ux_page_property_2d8ae0c0fa277e1065b3f054dfc8bb79</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-05 19:46:48</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_1909471_inspec_0.a58ae0c02f277e10265d24d5c7c6be98.root.global.chrome_tab</unique_name>
+        <value>{"contextual":["record"],"newTabMenu":[{"label":{"translatable":true,"message":"New Order"},"routeInfo":{"route":"record","fields":{"table":"x_1909471_inspec_0_order","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1909471_inspec_0_order","canCreate":true}}},{"label":{"translatable":true,"message":"New Device"},"routeInfo":{"route":"record","fields":{"table":"x_1909471_inspec_0_device","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1909471_inspec_0_device","canCreate":true}}}],"maxMainTabLimit":10,"maxTotalSubTabLimit":30}</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=2d8ae0c0fa277e1065b3f054dfc8bb79"/>
+</record_update>

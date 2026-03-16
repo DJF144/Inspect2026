@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_1909471_inspec_0_device" version="2" view="workspace-inspect-2026-0">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Device - Workspace Inspect 2026 0" name="x_1909471_inspec_0_device" related_list="NULL" sys_domain="global" view="e18ae0c0db277e10b66d416bedcb818d">738a28c093277e100cbd35befaba102c</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-05 19:46:51</sys_created_on>
+            <sys_id>bf8a28c093277e100cbd35befaba102c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-05 19:46:51</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Device - Workspace Inspect 2026 0</calculated_name>
+            <filter/>
+            <name>x_1909471_inspec_0_device</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-05 19:46:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>738a28c093277e100cbd35befaba102c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Device - Workspace Inspect 2026 0</sys_name>
+            <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+            <sys_update_name>sys_ui_related_x_1909471_inspec_0_device_workspace-inspect-2026-0</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-05 19:46:51</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace Inspect 2026 0" name="workspace-inspect-2026-0">e18ae0c0db277e10b66d416bedcb818d</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>
