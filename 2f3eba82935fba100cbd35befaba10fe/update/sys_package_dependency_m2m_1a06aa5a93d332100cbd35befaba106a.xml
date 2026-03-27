@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Task table schema" source="com.glide.task">09ac4c51795232108bb291bde809c933</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-28 18:16:58</sys_created_on>
+        <sys_id>1a06aa5a93d332100cbd35befaba106a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-28 18:16:58</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

@@ -7,11 +7,13 @@
         <end_date/>
         <language>en</language>
         <name>Inspect 2026 PDF Template</name>
+        <owner/>
         <set_signing_order>true</set_signing_order>
         <signing_type>servicenow_sign</signing_type>
         <source_template/>
         <start_date/>
         <state>edit</state>
+        <storage_destination>attachment</storage_destination>
         <sys_class_name>sn_doc_pdf_template</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-03-05 01:09:39</sys_created_on>
