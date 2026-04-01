@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_parameter_screen">
+    <sys_sg_parameter_screen action="DELETE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <available_offline>true</available_offline>
+        <cancel_label>Cancel</cancel_label>
+        <description>Touchscreen Test</description>
+        <dynamic_prefetch_count/>
+        <empty_state/>
+        <fetch_type>not_required</fetch_type>
+        <filter/>
+        <header_only_on_first_page>false</header_only_on_first_page>
+        <hide_action_execution_messages_button>false</hide_action_execution_messages_button>
+        <hide_filters>false</hide_filters>
+        <hide_page_progress_menu>false</hide_page_progress_menu>
+        <hide_screen_name>false</hide_screen_name>
+        <icon/>
+        <name>Touchscreen</name>
+        <next_label>Next</next_label>
+        <pagination_type>all</pagination_type>
+        <presentation_style>modal</presentation_style>
+        <prev_label>Previous</prev_label>
+        <proceed_with_unfilled_mandatory_inputs>false</proceed_with_unfilled_mandatory_inputs>
+        <reset_after_submit>false</reset_after_submit>
+        <resume>true</resume>
+        <roles_override/>
+        <show_unsaved_changes_confirmation_message>false</show_unsaved_changes_confirmation_message>
+        <submit_label>Submit</submit_label>
+        <sys_class_name>sys_sg_parameter_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-02 20:10:35</sys_created_on>
+        <sys_id>92339d4f935b76100cbd35befaba1025</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Touchscreen</sys_name>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_update_name>sys_sg_parameter_screen_92339d4f935b76100cbd35befaba1025</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-02 20:10:35</sys_updated_on>
+        <track_input_updates_timestamps>false</track_input_updates_timestamps>
+        <type display_value="">string</type>
+        <unsaved_changes_cancel_button_label>Stay</unsaved_changes_cancel_button_label>
+        <unsaved_changes_confirm_button_label>Leave</unsaved_changes_confirm_button_label>
+        <unsaved_changes_confirmation_message_body>Are you sure you want to leave this page? Changes you made will not be saved.</unsaved_changes_confirmation_message_body>
+        <unsaved_changes_confirmation_message_title>You have unsaved changes</unsaved_changes_confirmation_message_title>
+        <view_config/>
+    </sys_sg_parameter_screen>
+    <sys_translated_text action="DELETE" query="documentkey=92339d4f935b76100cbd35befaba1025"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</application>
+        <file_path/>
+        <instance_id>36a568f1eb15aa5ccbdefceacad0cd7b</instance_id>
+        <instance_name>dev341845</instance_name>
+        <name>sys_sg_parameter_screen_92339d4f935b76100cbd35befaba1025</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_parameter_screen"><sys_sg_parameter_screen action="INSERT_OR_UPDATE"><active>true</active><advanced>false</advanced><available_offline>true</available_offline><cancel_label>Cancel</cancel_label><description>Touchscreen Test</description><dynamic_prefetch_count/><empty_state/><fetch_type>not_required</fetch_type><filter/><header_only_on_first_page>false</header_only_on_first_page><hide_action_execution_messages_button>false</hide_action_execution_messages_button><hide_filters>false</hide_filters><hide_page_progress_menu>false</hide_page_progress_menu><hide_screen_name>false</hide_screen_name><icon/><name>Touchscreen</name><next_label>Next</next_label><pagination_type>all</pagination_type><presentation_style>modal</presentation_style><prev_label>Previous</prev_label><proceed_with_unfilled_mandatory_inputs>false</proceed_with_unfilled_mandatory_inputs><reset_after_submit>false</reset_after_submit><resume>true</resume><roles_override/><show_unsaved_changes_confirmation_message>false</show_unsaved_changes_confirmation_message><submit_label>Submit</submit_label><sys_class_name>sys_sg_parameter_screen</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-02 20:10:35</sys_created_on><sys_id>92339d4f935b76100cbd35befaba1025</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Touchscreen</sys_name><sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package><sys_policy/><sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope><sys_update_name>sys_sg_parameter_screen_92339d4f935b76100cbd35befaba1025</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-02 20:10:35</sys_updated_on><track_input_updates_timestamps>false</track_input_updates_timestamps><type display_value="">string</type><unsaved_changes_cancel_button_label>Stay</unsaved_changes_cancel_button_label><unsaved_changes_confirm_button_label>Leave</unsaved_changes_confirm_button_label><unsaved_changes_confirmation_message_body>Are you sure you want to leave this page? Changes you made will not be saved.</unsaved_changes_confirmation_message_body><unsaved_changes_confirmation_message_title>You have unsaved changes</unsaved_changes_confirmation_message_title><view_config/></sys_sg_parameter_screen><sys_translated_text action="delete_multiple" query="documentkey=92339d4f935b76100cbd35befaba1025"/></record_update>]]></payload>
+        <payload_hash>-1104622236</payload_hash>
+        <record_name>Touchscreen</record_name>
+        <reverted_from/>
+        <source>32f6be9a935732100cbd35befaba1083</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-02 20:10:35</sys_created_on>
+        <sys_id>d233dd4f935b76100cbd35befaba10fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19cb02c8e400000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-02 20:10:35</sys_updated_on>
+        <type>Input form screen</type>
+        <update_guid>1233dd4f435b761020d2b62c6b5c93fb</update_guid>
+        <update_guid_history>1233dd4f435b761020d2b62c6b5c93fb:-1104622236</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-27 00:36:07</sys_created_on>
+        <sys_db_object display_value="" name="sys_sg_parameter_screen">sys_sg_parameter_screen</sys_db_object>
+        <sys_id>228f61cf12ce4999a0cc8a464cb88509</sys_id>
+        <sys_metadata>92339d4f935b76100cbd35befaba1025</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Touchscreen</sys_name>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_scope_delete display_value="">446d1859cdca4f34a7ecc80b8969d661</sys_scope_delete>
+        <sys_update_name>sys_sg_parameter_screen_92339d4f935b76100cbd35befaba1025</sys_update_name>
+        <sys_update_version display_value="sys_sg_parameter_screen_92339d4f935b76100cbd35befaba1025">d233dd4f935b76100cbd35befaba10fc</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-27 00:36:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

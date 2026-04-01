@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Functional Test" section_id="4c9a68c093277e100cbd35befaba107b" sys_domain="global" table="x_1909471_inspec_0_device" version="3" view="workspace-inspect-2026-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>new_field_1</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-05 19:46:52</sys_created_on>
+            <sys_id>c09a68c093277e100cbd35befaba1080</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Functional Test" display_value="Functional Test" name="x_1909471_inspec_0_device" sys_domain="global" view="e18ae0c0db277e10b66d416bedcb818d">4c9a68c093277e100cbd35befaba107b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-05 19:46:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-05 19:46:52</sys_created_on>
+            <sys_id>449a68c093277e100cbd35befaba107f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Functional Test" display_value="Functional Test" name="x_1909471_inspec_0_device" sys_domain="global" view="e18ae0c0db277e10b66d416bedcb818d">4c9a68c093277e100cbd35befaba107b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-05 19:46:52</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>new_field_2</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-05 19:46:52</sys_created_on>
+            <sys_id>409a68c093277e100cbd35befaba1081</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Functional Test" display_value="Functional Test" name="x_1909471_inspec_0_device" sys_domain="global" view="e18ae0c0db277e10b66d416bedcb818d">4c9a68c093277e100cbd35befaba107b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-05 19:46:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Functional Test</caption>
+            <header>false</header>
+            <name>x_1909471_inspec_0_device</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-05 19:46:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4c9a68c093277e100cbd35befaba107b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1909471_inspec_0_device</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+            <sys_update_name>sys_ui_section_4c9a68c093277e100cbd35befaba107b</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-05 19:46:52</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Workspace Inspect 2026 0" name="workspace-inspect-2026-0">e18ae0c0db277e10b66d416bedcb818d</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</application>
+        <file_path/>
+        <instance_id>36a568f1eb15aa5ccbdefceacad0cd7b</instance_id>
+        <instance_name>dev341845</instance_name>
+        <name>sys_ui_section_4c9a68c093277e100cbd35befaba107b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Functional Test" section_id="4c9a68c093277e100cbd35befaba107b" sys_domain="global" table="x_1909471_inspec_0_device" version="3" view="workspace-inspect-2026-0"><sys_ui_element action="INSERT_OR_UPDATE"><element>new_field_1</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-05 19:46:52</sys_created_on><sys_id>c09a68c093277e100cbd35befaba1080</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Functional Test" display_value="Functional Test" name="x_1909471_inspec_0_device" sys_domain="global" view="e18ae0c0db277e10b66d416bedcb818d">4c9a68c093277e100cbd35befaba107b</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-05 19:46:52</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-05 19:46:52</sys_created_on><sys_id>449a68c093277e100cbd35befaba107f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Functional Test" display_value="Functional Test" name="x_1909471_inspec_0_device" sys_domain="global" view="e18ae0c0db277e10b66d416bedcb818d">4c9a68c093277e100cbd35befaba107b</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-05 19:46:52</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>new_field_2</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-05 19:46:52</sys_created_on><sys_id>409a68c093277e100cbd35befaba1081</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Functional Test" display_value="Functional Test" name="x_1909471_inspec_0_device" sys_domain="global" view="e18ae0c0db277e10b66d416bedcb818d">4c9a68c093277e100cbd35befaba107b</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-05 19:46:52</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Functional Test</caption><header>false</header><name>x_1909471_inspec_0_device</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-05 19:46:52</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4c9a68c093277e100cbd35befaba107b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1909471_inspec_0_device</sys_name><sys_overrides/><sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package><sys_policy/><sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope><sys_update_name>sys_ui_section_4c9a68c093277e100cbd35befaba107b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-05 19:46:52</sys_updated_on><sys_user/><title>false</title><view display_value="Workspace Inspect 2026 0" name="workspace-inspect-2026-0">e18ae0c0db277e10b66d416bedcb818d</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-290330789</payload_hash>
+        <record_name>Device</record_name>
+        <reverted_from/>
+        <source>32f6be9a935732100cbd35befaba1083</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-05 19:46:52</sys_created_on>
+        <sys_id>4c9a68c093277e100cbd35befaba108e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19cbf89e98a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-05 19:46:52</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>cc9a68c085277e10743a2d89f7ddc68d</update_guid>
+        <update_guid_history>cc9a68c085277e10743a2d89f7ddc68d:-290330789</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-16 22:09:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>be38ddbae60f4390860625c1b3895544</sys_id>
+        <sys_metadata>4c9a68c093277e100cbd35befaba107b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Functional Test</sys_name>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_parent display_value="Device">50221e8f9353b6100cbd35befaba1030</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_scope_delete display_value="">446d1859cdca4f34a7ecc80b8969d661</sys_scope_delete>
+        <sys_update_name>sys_ui_section_4c9a68c093277e100cbd35befaba107b</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_4c9a68c093277e100cbd35befaba107b">4c9a68c093277e100cbd35befaba108e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-16 22:09:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

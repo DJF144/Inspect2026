@@ -6,37 +6,205 @@
         <custom_font/>
         <end_date/>
         <footer_image/>
-        <footer_image_height>50</footer_image_height>
-        <footer_image_position>CENTER</footer_image_position>
+        <footer_image_height>10</footer_image_height>
+        <footer_image_position>RIGHT</footer_image_position>
         <footnote/>
         <footnote_position>RIGHT</footnote_position>
         <footnote_vertical_position>BELOW</footnote_vertical_position>
-        <header_image>06acd133939bfa100cbd35befaba106e</header_image>
-        <header_image_height>50</header_image_height>
+        <header_image/>
+        <header_image_height/>
         <header_image_position>CENTER</header_image_position>
-        <html_script_body><![CDATA[<h1 style="text-align: center; color: #1f4e79;">Inspection Report</h1>
-<h3>&nbsp;</h3>
-<h3><span style="font-size: 12pt;">Order</span> <span style="font-size: 12pt;">Information</span></h3>
-<p>Number: ${parent.number}</p>
-<p>Assigned to: ${parent.assigned_to}</p>
-<p>&nbsp;</p>
-<h2>Inspections</h2>
-<p>Device Serial Number: ${device_serial_number}</p>
-<p>Dents: ${dents}</p>
-<p>Paint Peeling on the casing: ${new_field_3}</p>
-<p>Upload Document: ${upload_document}</p>
-<p>Screen Condition: ${button_1}</p>
-<p>Headphone Port : ${headphone_port}</p>
-<p>&nbsp;</p>
-<p>${upload_picture}</p>
-<p>&nbsp;</p>
-<p><img src="/sys_attachment.do?sys_id=${pictures_added}" width="300"></p>
-<p><img src="/sys_attachment.do?sys_id=${pictures_added}" width="300"></p>
-<p><img src="/sys_attachment.do?sys_id=${pictures_added}" width="300"></p>
-<p><img src="/sys_attachment.do?sys_id=${pictures_added}" width="300"></p>
-<p>Upload Picture: ${upload_picture}</p>
-<p>url_list_pictures: ${pictures_added}</p>
-<!-- Add block manually like this -->]]></html_script_body>
+        <html_script_body><![CDATA[<p>&nbsp;</p>
+<style>   @page { margin: 0; padding: 0; }
+  body { margin: 0; padding: 0; background: #ffffff; font-family: Arial, Helvetica, sans-serif; }
+  table { border-collapse: collapse; }</style>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="padding: 0; margin: 0; vertical-align: top;" align="center" valign="top">
+<table style="background: #ffffff; border: 1px solid #d0dfee;" border="0" width="720" cellspacing="0" cellpadding="0"><!-- HEADER -->
+<tbody>
+<tr>
+<td style="background: #1f4e79; padding: 20px 44px 16px;">
+<div style="font-size: 28px; font-weight: bold; color: #ffffff; font-family: Georgia, serif; letter-spacing: -0.3px;">Mobile Device Inspection Report</div>
+</td>
+</tr>
+<!-- BODY -->
+<tr>
+<td style="padding: 16px 44px 24px; vertical-align: top;" valign="top"><!-- GENERAL INFORMATION -->
+<table style="border: 1px solid #d0dfee; margin-bottom: 14px; page-break-inside: avoid;" border="0" width="100%" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="background: #1f4e79; padding: 10px 18px;" colspan="2"><span style="font-size: 10px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; color: #ffffff;">General Information</span></td>
+</tr>
+<tr>
+<td style="padding: 12px 18px; border-bottom: 1px solid #d0dfee; border-right: 1px solid #d0dfee; vertical-align: top; text-align: left;" width="50%">
+<div style="font-size: 8px; font-weight: bold; letter-spacing: 1.5px; text-transform: uppercase; color: #7a94ad; margin-bottom: 4px;">Order Number</div>
+<div style="font-size: 13px; font-weight: 500; color: #1a2e3d;">${parent.number}</div>
+</td>
+<td style="padding: 12px 18px; border-bottom: 1px solid #d0dfee; vertical-align: top; text-align: right;" width="50%">
+<div style="font-size: 8px; font-weight: bold; letter-spacing: 1.5px; text-transform: uppercase; color: #7a94ad; margin-bottom: 4px;">Inspector</div>
+<div style="font-size: 13px; font-weight: 500; color: #1a2e3d;">${parent.assigned_to}</div>
+</td>
+</tr>
+<tr>
+<td style="padding: 12px 18px; border-bottom: 1px solid #d0dfee; border-right: 1px solid #d0dfee; vertical-align: top; text-align: left;" width="50%">
+<div style="font-size: 8px; font-weight: bold; letter-spacing: 1.5px; text-transform: uppercase; color: #7a94ad; margin-bottom: 4px;">IMEI / Serial No.</div>
+<div style="font-size: 13px; font-weight: 500; color: #1a2e3d;">${device_serial_number}</div>
+</td>
+<td style="padding: 12px 18px; border-bottom: 1px solid #d0dfee; vertical-align: top; text-align: right;" width="50%">
+<div style="font-size: 8px; font-weight: bold; letter-spacing: 1.5px; text-transform: uppercase; color: #7a94ad; margin-bottom: 4px;">Model</div>
+<div style="font-size: 13px; font-weight: 500; color: #1a2e3d;">${model}</div>
+</td>
+</tr>
+<tr>
+<td style="padding: 12px 18px; border-right: 1px solid #d0dfee; vertical-align: top; text-align: left;" width="50%">
+<div style="font-size: 8px; font-weight: bold; letter-spacing: 1.5px; text-transform: uppercase; color: #7a94ad; margin-bottom: 4px;">Color</div>
+<div style="font-size: 13px; font-weight: 500; color: #1a2e3d;">${color}</div>
+</td>
+<td style="padding: 12px 18px; vertical-align: top; text-align: right;" width="50%">
+<div style="font-size: 8px; font-weight: bold; letter-spacing: 1.5px; text-transform: uppercase; color: #7a94ad; margin-bottom: 4px;">Item Type</div>
+<div style="font-size: 13px; font-weight: 500; color: #1a2e3d;">${item_type}</div>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- FRAME & BODY -->
+<table style="border: 1px solid #d0dfee; margin-bottom: 14px; page-break-inside: avoid;" border="0" width="100%" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="background: #1f4e79; padding: 10px 18px;" colspan="2"><span style="font-size: 10px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; color: #ffffff;">Frame &amp; Body</span></td>
+</tr>
+<tr style="background: #ffffff;">
+<td style="padding: 10px 18px; border-bottom: 1px solid #d0dfee; font-size: 12px; font-weight: 500; color: #1a2e3d; text-align: left; vertical-align: middle;">Frame</td>
+<td style="padding: 10px 18px; border-bottom: 1px solid #d0dfee; font-size: 12px; font-weight: bold; color: #2e7dc5; text-align: right; vertical-align: middle;">${frame}</td>
+</tr>
+<tr style="background: #e8f2fb;">
+<td style="padding: 10px 18px; border-bottom: 1px solid #d0dfee; font-size: 12px; font-weight: 500; color: #1a2e3d; text-align: left; vertical-align: middle;">Back Glass / Cover</td>
+<td style="padding: 10px 18px; border-bottom: 1px solid #d0dfee; font-size: 12px; font-weight: bold; color: #2e7dc5; text-align: right; vertical-align: middle;">${back_glass_cover}</td>
+</tr>
+<tr style="background: #ffffff;">
+<td style="padding: 10px 18px; border-bottom: 1px solid #d0dfee; font-size: 12px; font-weight: 500; color: #1a2e3d; text-align: left; vertical-align: middle;">SIM Tray</td>
+<td style="padding: 10px 18px; border-bottom: 1px solid #d0dfee; font-size: 12px; font-weight: bold; color: #2e7dc5; text-align: right; vertical-align: middle;">${sim_tray}</td>
+</tr>
+<tr style="background: #e8f2fb;">
+<td style="padding: 10px 18px; border-bottom: 1px solid #d0dfee; font-size: 12px; font-weight: 500; color: #1a2e3d; text-align: left; vertical-align: middle;">Buttons (Side/Volume)</td>
+<td style="padding: 10px 18px; border-bottom: 1px solid #d0dfee; font-size: 12px; font-weight: bold; color: #2e7dc5; text-align: right; vertical-align: middle;">${buttons_side_volume}</td>
+</tr>
+<tr style="background: #ffffff;">
+<td style="padding: 10px 18px; border-bottom: 1px solid #d0dfee; font-size: 12px; font-weight: 500; color: #1a2e3d; text-align: left; vertical-align: middle;">Charging Port</td>
+<td style="padding: 10px 18px; border-bottom: 1px solid #d0dfee; font-size: 12px; font-weight: bold; color: #2e7dc5; text-align: right; vertical-align: middle;">${charing_port}</td>
+</tr>
+<tr style="background: #e8f2fb;">
+<td style="padding: 10px 18px; border-bottom: 1px solid #d0dfee; font-size: 12px; font-weight: 500; color: #1a2e3d; text-align: left; vertical-align: middle;">USB-C Port</td>
+<td style="padding: 10px 18px; border-bottom: 1px solid #d0dfee; font-size: 12px; font-weight: bold; color: #2e7dc5; text-align: right; vertical-align: middle;"><span aria-describedby="panel-subheader-tooltip">${usb_c_port}</span></td>
+</tr>
+<tr style="background: #f7fafd;">
+<td style="padding: 10px 18px; text-align: left; vertical-align: top;" colspan="2">
+<div style="font-size: 8px; font-weight: bold; letter-spacing: 1.5px; text-transform: uppercase; color: #7a94ad; margin-bottom: 4px;">Frame &amp; Body Notes</div>
+<div style="font-size: 12px; font-weight: 500; color: #1a2e3d; line-height: 1.6; word-wrap: break-word;">${physical_condition_notes}</div>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- DISPLAY & TOUCH -->
+<table style="border: 1px solid #d0dfee; margin-bottom: 14px; page-break-inside: avoid;" border="0" width="100%" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="background: #1f4e79; padding: 10px 18px;" colspan="2"><span style="font-size: 10px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; color: #ffffff;">Display &amp; Touch</span></td>
+</tr>
+<tr style="background: #ffffff;">
+<td style="padding: 10px 18px; border-bottom: 1px solid #d0dfee; font-size: 12px; font-weight: 500; color: #1a2e3d; text-align: left; vertical-align: middle;">Screen Condition</td>
+<td style="padding: 10px 18px; border-bottom: 1px solid #d0dfee; font-size: 12px; font-weight: bold; color: #2e7dc5; text-align: right; vertical-align: middle;">${screen_condition}</td>
+</tr>
+<tr style="background: #e8f2fb;">
+<td style="padding: 10px 18px; border-bottom: 1px solid #d0dfee; font-size: 12px; font-weight: 500; color: #1a2e3d; text-align: left; vertical-align: middle;">Dead Pixels</td>
+<td style="padding: 10px 18px; border-bottom: 1px solid #d0dfee; font-size: 12px; font-weight: bold; color: #2e7dc5; text-align: right; vertical-align: middle;">${dead_pixels}</td>
+</tr>
+<tr style="background: #ffffff;">
+<td style="padding: 10px 18px; border-bottom: 1px solid #d0dfee; font-size: 12px; font-weight: 500; color: #1a2e3d; text-align: left; vertical-align: middle;">Touch Responsiveness</td>
+<td style="padding: 10px 18px; border-bottom: 1px solid #d0dfee; font-size: 12px; font-weight: bold; color: #2e7dc5; text-align: right; vertical-align: middle;">${touch_responsiveness}</td>
+</tr>
+<tr style="background: #f7fafd;">
+<td style="padding: 10px 18px; text-align: left; vertical-align: top;" colspan="2">
+<div style="font-size: 8px; font-weight: bold; letter-spacing: 1.5px; text-transform: uppercase; color: #7a94ad; margin-bottom: 4px;">Display &amp; Touch Notes</div>
+<div style="font-size: 12px; font-weight: 500; color: #1a2e3d; line-height: 1.6; word-wrap: break-word;">${description}</div>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- BATTERY & CHARGING -->
+<table style="border: 1px solid #d0dfee; margin-bottom: 14px; page-break-inside: avoid;" border="0" width="100%" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="background: #1f4e79; padding: 10px 18px;" colspan="2"><span style="font-size: 10px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; color: #ffffff;">Battery</span></td>
+</tr>
+<tr style="background: #ffffff;">
+<td style="padding: 10px 18px; border-bottom: 1px solid #d0dfee; font-size: 12px; font-weight: 500; color: #1a2e3d; text-align: left; vertical-align: middle;">Battery Health</td>
+<td style="padding: 10px 18px; border-bottom: 1px solid #d0dfee; font-size: 12px; font-weight: bold; color: #2e7dc5; text-align: right; vertical-align: middle;">${battery_health}</td>
+</tr>
+<tr style="background: #e8f2fb;">
+<td style="padding: 10px 18px; border-bottom: 1px solid #d0dfee; font-size: 12px; font-weight: 500; color: #1a2e3d; text-align: left; vertical-align: middle;">Charging</td>
+<td style="padding: 10px 18px; border-bottom: 1px solid #d0dfee; font-size: 12px; font-weight: bold; color: #2e7dc5; text-align: right; vertical-align: middle;">${charging}</td>
+</tr>
+<tr style="background: #f7fafd;">
+<td style="padding: 10px 18px; text-align: left; vertical-align: top;" colspan="2">
+<div style="font-size: 8px; font-weight: bold; letter-spacing: 1.5px; text-transform: uppercase; color: #7a94ad; margin-bottom: 4px;">Battery &amp; Charging Notes</div>
+<div style="font-size: 12px; font-weight: 500; color: #1a2e3d; line-height: 1.6; word-wrap: break-word;">${short_description}</div>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- CAMERA & SPEAKERS -->
+<table style="border: 1px solid rgb(208, 223, 238); margin-bottom: 0px; break-inside: avoid; height: 184.2px;" border="0" width="100%" cellspacing="0" cellpadding="0">
+<tbody>
+<tr style="height: 15.4px;">
+<td style="background: rgb(31, 78, 121); padding: 10px 18px; height: 15.4px; width: 100%;" colspan="2"><span style="font-size: 10px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; color: #ffffff;">Camera &amp; Speakers</span></td>
+</tr>
+<tr style="background: rgb(255, 255, 255); height: 16.8px;">
+<td style="padding: 10px 18px; border-bottom: 1px solid rgb(208, 223, 238); font-size: 12px; font-weight: 500; color: rgb(26, 46, 61); text-align: left; vertical-align: middle; height: 16.8px; width: 46.5819%;">Front Camera</td>
+<td style="padding: 10px 18px; border-bottom: 1px solid rgb(208, 223, 238); font-size: 12px; font-weight: bold; color: rgb(46, 125, 197); text-align: right; vertical-align: middle; height: 16.8px; width: 53.4181%;">${front_camera}</td>
+</tr>
+<tr style="background: rgb(232, 242, 251); height: 16.8px;">
+<td style="padding: 10px 18px; border-bottom: 1px solid rgb(208, 223, 238); font-size: 12px; font-weight: 500; color: rgb(26, 46, 61); text-align: left; vertical-align: middle; height: 16.8px; width: 46.5819%;">Front Camera Quality</td>
+<td style="padding: 10px 18px; border-bottom: 1px solid rgb(208, 223, 238); font-size: 12px; font-weight: bold; color: rgb(46, 125, 197); text-align: right; vertical-align: middle; height: 16.8px; width: 53.4181%;">${front_photo_quality}</td>
+</tr>
+<tr style="background: rgb(255, 255, 255); height: 16.8px;">
+<td style="padding: 10px 18px; border-bottom: 1px solid rgb(208, 223, 238); font-size: 12px; font-weight: 500; color: rgb(26, 46, 61); text-align: left; vertical-align: middle; height: 16.8px; width: 46.5819%;">Rear Photo</td>
+<td style="padding: 10px 18px; border-bottom: 1px solid rgb(208, 223, 238); font-size: 12px; font-weight: bold; color: rgb(46, 125, 197); text-align: right; vertical-align: middle; height: 16.8px; width: 53.4181%;">${rear_video}</td>
+</tr>
+<tr style="background: rgb(232, 242, 251); height: 16.8px;">
+<td style="padding: 10px 18px; border-bottom: 1px solid rgb(208, 223, 238); font-size: 12px; font-weight: 500; color: rgb(26, 46, 61); text-align: left; vertical-align: middle; height: 16.8px; width: 46.5819%;">Rear Photo Quality</td>
+<td style="padding: 10px 18px; border-bottom: 1px solid rgb(208, 223, 238); font-size: 12px; font-weight: bold; color: rgb(46, 125, 197); text-align: right; vertical-align: middle; height: 16.8px; width: 53.4181%;">${rear_photo_quality}</td>
+</tr>
+<tr style="background: rgb(255, 255, 255); height: 16.8px;">
+<td style="padding: 10px 18px; border-bottom: 1px solid rgb(208, 223, 238); font-size: 12px; font-weight: 500; color: rgb(26, 46, 61); text-align: left; vertical-align: middle; height: 16.8px; width: 46.5819%;">Bottom Speaker</td>
+<td style="padding: 10px 18px; border-bottom: 1px solid rgb(208, 223, 238); font-size: 12px; font-weight: bold; color: rgb(46, 125, 197); text-align: right; vertical-align: middle; height: 16.8px; width: 53.4181%;">${bottom_speaker}</td>
+</tr>
+<tr style="background: rgb(247, 250, 253); height: 34.4px;">
+<td style="padding: 10px 18px; border-bottom: 1px solid rgb(208, 223, 238); font-size: 12px; font-weight: 500; color: rgb(26, 46, 61); text-align: left; vertical-align: middle; height: 16.8px; width: 46.5819%;">Earpiece Speakers</td>
+<td style="padding: 10px 18px; border-bottom: 1px solid rgb(208, 223, 238); font-size: 12px; font-weight: bold; color: rgb(46, 125, 197); text-align: right; vertical-align: middle; height: 16.8px; width: 53.4181%;">${earpiece_speakers}</td>
+</tr>
+<tr style="background: rgb(255, 255, 255); height: 16.8px;">
+<td style="padding: 10px 18px; border-bottom: 1px solid rgb(208, 223, 238); font-size: 12px; font-weight: 500; color: rgb(26, 46, 61); text-align: left; vertical-align: middle; height: 16.8px; width: 46.5819%;">Microphones</td>
+<td style="padding: 10px 18px; border-bottom: 1px solid rgb(208, 223, 238); font-size: 12px; font-weight: bold; color: rgb(46, 125, 197); text-align: right; vertical-align: middle; height: 16.8px; width: 53.4181%;">${microphones}</td>
+</tr>
+<tr style="background: rgb(247, 250, 253); height: 34.4px;">
+<td style="padding: 10px 18px; text-align: left; vertical-align: top; height: 34.4px; width: 100%;" colspan="2">
+<div style="font-size: 8px; font-weight: bold; letter-spacing: 1.5px; text-transform: uppercase; color: #7a94ad; margin-bottom: 4px;">Camera &amp; Speaker Notes</div>
+<div style="font-size: 12px; font-weight: 500; color: #1a2e3d; line-height: 1.6; word-wrap: break-word;">${camera_speaker_notes}</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>]]></html_script_body>
         <language>en</language>
         <left_right_margin>36</left_right_margin>
         <name>PDF Report HTML</name>
@@ -47,25 +215,25 @@
         <signing_type>servicenow_sign</signing_type>
         <source_template/>
         <start_date/>
-        <state>draft</state>
+        <state>edit</state>
         <storage_destination>attachment</storage_destination>
         <sys_class_name>sn_doc_html_template</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-03-05 01:32:47</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>42dee4b39357fa100cbd35befaba10a5</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>52</sys_mod_count>
         <sys_name>PDF Report HTML</sys_name>
         <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
         <sys_policy/>
         <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
         <sys_update_name>sn_doc_html_template_42dee4b39357fa100cbd35befaba10a5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-13 21:45:59</sys_updated_on>
+        <sys_updated_on>2026-03-20 20:06:35</sys_updated_on>
         <table>x_1909471_inspec_0_device</table>
         <template_date_format/>
         <toc_config/>
-        <top_bottom_margin>72</top_bottom_margin>
+        <top_bottom_margin>36</top_bottom_margin>
         <user_criteria/>
     </sn_doc_html_template>
     <sys_translated_text action="delete_multiple" query="documentkey=42dee4b39357fa100cbd35befaba10a5"/>

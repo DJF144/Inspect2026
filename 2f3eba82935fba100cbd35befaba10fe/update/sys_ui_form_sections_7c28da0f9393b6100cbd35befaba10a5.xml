@@ -17,30 +17,58 @@
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-03 01:11:41</sys_created_on>
+            <sys_created_on>2026-03-16 22:37:14</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>bc28da0f9393b6100cbd35befaba10b8</sys_id>
+            <sys_id>c30b75e7932f32100cbd35befaba10eb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_1909471_inspec_0_device" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">7c28da0f9393b6100cbd35befaba10a5</sys_ui_form>
-            <sys_ui_section caption="Physical Inspection" display_value="Physical Inspection" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">3028da0f9393b6100cbd35befaba10a3</sys_ui_section>
+            <sys_ui_section caption="Frame &amp; Body" display_value="Frame &amp; Body" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">430b75e7932f32100cbd35befaba10e7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-03 01:11:41</sys_updated_on>
+            <sys_updated_on>2026-03-16 22:37:14</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-03 01:11:41</sys_created_on>
+            <sys_created_on>2026-03-16 22:44:04</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>fc28da0f9393b6100cbd35befaba10bf</sys_id>
+            <sys_id>879c75eb932f32100cbd35befaba1085</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_1909471_inspec_0_device" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">7c28da0f9393b6100cbd35befaba10a5</sys_ui_form>
-            <sys_ui_section caption="Functional Test" display_value="Functional Test" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">3828da0f9393b6100cbd35befaba10a4</sys_ui_section>
+            <sys_ui_section caption="Display &amp; Touch" display_value="Display &amp; Touch" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">0f9c75eb932f32100cbd35befaba1080</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-03 01:11:41</sys_updated_on>
+            <sys_updated_on>2026-03-16 22:44:04</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-20 01:01:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>06e8b9ac937732100cbd35befaba1061</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1909471_inspec_0_device" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">7c28da0f9393b6100cbd35befaba10a5</sys_ui_form>
+            <sys_ui_section caption="Battery" display_value="Battery" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">4ae8b9ac937732100cbd35befaba104c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-20 01:01:49</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-20 01:01:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>46e8b9ac937732100cbd35befaba1069</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1909471_inspec_0_device" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">7c28da0f9393b6100cbd35befaba10a5</sys_ui_form>
+            <sys_ui_section caption="Cameras &amp; Speakers" display_value="Cameras &amp; Speakers" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">0ae8b9ac937732100cbd35befaba104f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-20 01:01:49</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_1909471_inspec_0_device</name>

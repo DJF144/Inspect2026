@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="" section_id="ac221e8f9353b6100cbd35befaba1000" sys_domain="global" table="x_1909471_inspec_0_device" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>assigned_to</element>
+            <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-04 21:15:26</sys_created_on>
-            <sys_id>ab35ffa7935fba100cbd35befaba1065</sys_id>
+            <sys_created_on>2026-03-20 21:17:33</sys_created_on>
+            <sys_id>f62f0a78933bb2100cbd35befaba10b7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">ac221e8f9353b6100cbd35befaba1000</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-04 21:15:26</sys_updated_on>
+            <sys_updated_on>2026-03-20 21:17:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-20 21:17:33</sys_created_on>
+            <sys_id>762f0a78933bb2100cbd35befaba10b8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">ac221e8f9353b6100cbd35befaba1000</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-20 21:17:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>device_serial_number</element>
-            <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-04 21:15:26</sys_created_on>
-            <sys_id>a735ffa7935fba100cbd35befaba107f</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">ac221e8f9353b6100cbd35befaba1000</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-04 21:15:26</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>cmdb_ci</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-04 21:15:26</sys_created_on>
-            <sys_id>2735ffa7935fba100cbd35befaba1080</sys_id>
+            <sys_created_on>2026-03-20 21:17:33</sys_created_on>
+            <sys_id>f22f0a78933bb2100cbd35befaba10b9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">ac221e8f9353b6100cbd35befaba1000</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-04 21:15:26</sys_updated_on>
+            <sys_updated_on>2026-03-20 21:17:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>item_type</element>
+            <element>device_model</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-04 21:15:26</sys_created_on>
-            <sys_id>a335ffa7935fba100cbd35befaba1081</sys_id>
+            <sys_created_on>2026-03-20 21:17:33</sys_created_on>
+            <sys_id>722f0a78933bb2100cbd35befaba10ba</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">ac221e8f9353b6100cbd35befaba1000</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-04 21:15:26</sys_updated_on>
+            <sys_updated_on>2026-03-20 21:17:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>.split</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-04 21:15:26</sys_created_on>
-            <sys_id>2335ffa7935fba100cbd35befaba1082</sys_id>
+            <sys_created_on>2026-03-20 21:17:33</sys_created_on>
+            <sys_id>fe2f0a78933bb2100cbd35befaba10ba</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">ac221e8f9353b6100cbd35befaba1000</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-04 21:15:26</sys_updated_on>
+            <sys_updated_on>2026-03-20 21:17:33</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>state</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-04 21:15:26</sys_created_on>
-            <sys_id>af35ffa7935fba100cbd35befaba1082</sys_id>
+            <sys_created_on>2026-03-20 21:17:33</sys_created_on>
+            <sys_id>7e2f0a78933bb2100cbd35befaba10bb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">ac221e8f9353b6100cbd35befaba1000</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-04 21:15:26</sys_updated_on>
+            <sys_updated_on>2026-03-20 21:17:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -88,27 +88,41 @@
             <element>parent</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-04 21:15:26</sys_created_on>
-            <sys_id>2f35ffa7935fba100cbd35befaba1083</sys_id>
+            <sys_created_on>2026-03-20 21:17:33</sys_created_on>
+            <sys_id>fa2f0a78933bb2100cbd35befaba10bc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">ac221e8f9353b6100cbd35befaba1000</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-04 21:15:26</sys_updated_on>
+            <sys_updated_on>2026-03-20 21:17:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>number</element>
+            <element>color</element>
             <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-04 21:15:26</sys_created_on>
-            <sys_id>ab35ffa7935fba100cbd35befaba1084</sys_id>
+            <sys_created_on>2026-03-20 21:17:33</sys_created_on>
+            <sys_id>7a2f0a78933bb2100cbd35befaba10bd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">ac221e8f9353b6100cbd35befaba1000</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-04 21:15:26</sys_updated_on>
+            <sys_updated_on>2026-03-20 21:17:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>item_type</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-20 21:17:33</sys_created_on>
+            <sys_id>f62f0a78933bb2100cbd35befaba10be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">ac221e8f9353b6100cbd35befaba1000</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-20 21:17:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
