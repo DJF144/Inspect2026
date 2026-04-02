@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1909471_inspec_0.Inspect CompanySync</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>Inspect CompanySync</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var rm = new sn_ws.RESTMessageV2('Global Mock API Companies', 'Default GET');
+var response = rm.execute();
+var data = JSON.parse(response.getBody());
+
+for (var i = 0; i < data.length; i++) {
+    var comp = data[i];
+    gs.info("Processing company: " + comp.name + " / ID: " + comp.u_external_id);
+
+    var gr = new GlideRecord('core_company');
+    gr.addQuery('u_external_id', comp.u_external_id);
+    gr.query();
+
+    if (gr.next()) {
+        gs.info("Updating existing company: " + comp.name);
+        gr.name = comp.name;
+        gr.street = comp.street;
+        gr.city = comp.city;
+        gr.zip = comp.zip;
+        gr.phone = comp.phone;
+        gr.update();
+    } else {
+        gs.info("Inserting new company: " + comp.name);
+        gr.initialize();
+        gr.u_external_id = comp.u_external_id;
+        gr.name = comp.name;
+        gr.street = comp.street;
+        gr.city = comp.city;
+        gr.zip = comp.zip;
+        gr.phone = comp.phone;
+        gr.insert();
+    }
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-01 00:25:40</sys_created_on>
+        <sys_id>7783e7989340c3100cbd35befaba10bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Inspect CompanySync</sys_name>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_update_name>sys_script_include_7783e7989340c3100cbd35befaba10bf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-01 00:25:40</sys_updated_on>
+    </sys_script_include>
+</record_update>

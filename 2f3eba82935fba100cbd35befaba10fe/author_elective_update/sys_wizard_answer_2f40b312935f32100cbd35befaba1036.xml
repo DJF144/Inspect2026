@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="DELETE">
+        <active>true</active>
+        <answer>Device 2026</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Device 2026</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">01ac4c51795232108bb291bde809c938</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-28 23:41:27</sys_created_on>
+        <sys_id>2f40b312935f32100cbd35befaba1036</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Device 2026</sys_name>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_update_name>sys_wizard_answer_2f40b312935f32100cbd35befaba1036</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-28 23:41:27</sys_updated_on>
+        <table/>
+        <target_url>x_1909471_inspec_0_device_2026.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</application>
+        <file_path/>
+        <instance_id>36a568f1eb15aa5ccbdefceacad0cd7b</instance_id>
+        <instance_name>dev341845</instance_name>
+        <name>sys_wizard_answer_2f40b312935f32100cbd35befaba1036</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer"><sys_wizard_answer action="INSERT_OR_UPDATE"><active>true</active><answer>Device 2026</answer><button_label/><dependent_value/><element/><name>Device 2026</name><next_question/><order>100</order><payload_name/><question display_value="Task" name="Task">01ac4c51795232108bb291bde809c938</question><roles/><script/><sys_class_name>sys_wizard_answer</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-02-28 23:41:27</sys_created_on><sys_id>2f40b312935f32100cbd35befaba1036</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Device 2026</sys_name><sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package><sys_policy/><sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope><sys_update_name>sys_wizard_answer_2f40b312935f32100cbd35befaba1036</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-02-28 23:41:27</sys_updated_on><table/><target_url>x_1909471_inspec_0_device_2026.do</target_url><type>1</type></sys_wizard_answer></record_update>]]></payload>
+        <payload_hash>-1664910022</payload_hash>
+        <record_name>Device 2026</record_name>
+        <reverted_from/>
+        <source>7cd14a01930332100cbd35befaba1099</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2026-02-12 08:10:39</sys_created_on>
+        <sys_id>999ab80493a77e100cbd35befaba1052</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>19c50e6f4180000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Answer</type>
+        <update_guid>599ab80435a77e101dd9ff4b01d08152</update_guid>
+        <update_guid_history>599ab80435a77e101dd9ff4b01d08152:-1664910022</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-05 20:56:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_wizard_answer">sys_wizard_answer</sys_db_object>
+        <sys_id>32e03d40290c454a87e7fe1d54434c44</sys_id>
+        <sys_metadata>2f40b312935f32100cbd35befaba1036</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Device 2026</sys_name>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_parent display_value="Task">01ac4c51795232108bb291bde809c938</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_scope_delete display_value="">446d1859cdca4f34a7ecc80b8969d661</sys_scope_delete>
+        <sys_update_name>sys_wizard_answer_2f40b312935f32100cbd35befaba1036</sys_update_name>
+        <sys_update_version display_value="sys_wizard_answer_2f40b312935f32100cbd35befaba1036">999ab80493a77e100cbd35befaba1052</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-05 20:56:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

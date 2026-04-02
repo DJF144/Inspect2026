@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_doc_template_block_content">
+    <sn_doc_template_block_content action="DELETE">
+        <active>true</active>
+        <applies_to/>
+        <applies_to_user/>
+        <applies_when/>
+        <block display_value="Last Try">c4cac8c093237e100cbd35befaba104d</block>
+        <body><![CDATA[<p>&lt;h3 style="color: #1f4e79;"&gt;Inspection: ${number}&lt;/h3&gt;<br><br>&lt;p&gt;&lt;strong&gt;Type of Inspection:&lt;/strong&gt; ${item_type}&lt;/p&gt;<br>&lt;p&gt;&lt;strong&gt;Date:&lt;/strong&gt; ${sys_created_on}&lt;/p&gt;<br>&lt;p&gt;&lt;strong&gt;Technician:&lt;/strong&gt; ${assigned_to}&lt;/p&gt;<br><br>&lt;hr&gt;</p>]]></body>
+        <language>en</language>
+        <name>Device Block</name>
+        <order>10</order>
+        <source_content/>
+        <sys_class_name>sn_doc_template_block_content</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-05 17:30:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>bb4b004493237e100cbd35befaba10d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_update_name>sn_doc_template_block_content_bb4b004493237e100cbd35befaba10d9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-05 17:30:46</sys_updated_on>
+    </sn_doc_template_block_content>
+    <sys_translated_text action="DELETE" query="documentkey=bb4b004493237e100cbd35befaba10d9"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</application>
+        <file_path/>
+        <instance_id>36a568f1eb15aa5ccbdefceacad0cd7b</instance_id>
+        <instance_name>dev341845</instance_name>
+        <name>sn_doc_template_block_content_bb4b004493237e100cbd35befaba10d9</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_doc_template_block_content"&gt;&lt;sn_doc_template_block_content action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_to/&gt;&lt;applies_to_user/&gt;&lt;applies_when/&gt;&lt;block display_value="Last Try"&gt;c4cac8c093237e100cbd35befaba104d&lt;/block&gt;&lt;body&gt;&lt;![CDATA[&lt;p&gt;&amp;lt;h3 style="color: #1f4e79;"&amp;gt;Inspection: ${number}&amp;lt;/h3&amp;gt;&lt;br&gt;&lt;br&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Type of Inspection:&amp;lt;/strong&amp;gt; ${item_type}&amp;lt;/p&amp;gt;&lt;br&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Date:&amp;lt;/strong&amp;gt; ${sys_created_on}&amp;lt;/p&amp;gt;&lt;br&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Technician:&amp;lt;/strong&amp;gt; ${assigned_to}&amp;lt;/p&amp;gt;&lt;br&gt;&lt;br&gt;&amp;lt;hr&amp;gt;&lt;/p&gt;]]&gt;&lt;/body&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;Device Block&lt;/name&gt;&lt;order&gt;10&lt;/order&gt;&lt;source_content/&gt;&lt;sys_class_name&gt;sn_doc_template_block_content&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-05 17:30:46&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;bb4b004493237e100cbd35befaba10d9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Inspect 2026" source="x_1909471_inspec_0"&gt;2f3eba82935fba100cbd35befaba10fe&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Inspect 2026"&gt;2f3eba82935fba100cbd35befaba10fe&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_doc_template_block_content_bb4b004493237e100cbd35befaba10d9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-05 17:30:46&lt;/sys_updated_on&gt;&lt;/sn_doc_template_block_content&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=bb4b004493237e100cbd35befaba10d9"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>68958489</payload_hash>
+        <record_name>Device Block</record_name>
+        <reverted_from/>
+        <source>32f6be9a935732100cbd35befaba1083</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-05 17:30:46</sys_created_on>
+        <sys_id>5e6bc04493237e100cbd35befaba10c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19cbf0d4e020000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-05 17:30:46</sys_updated_on>
+        <type>Document Template Block Content</type>
+        <update_guid>1e6bc04469237e10f78ee1d22e2ca2c4</update_guid>
+        <update_guid_history>1e6bc04469237e10f78ee1d22e2ca2c4:68958489</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Device Block">125c08c493237e100cbd35befaba100f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-05 17:34:51</sys_created_on>
+        <sys_db_object display_value="" name="sn_doc_template_block_content">sn_doc_template_block_content</sys_db_object>
+        <sys_id>17c394bebfb0446c91cd41e549241a19</sys_id>
+        <sys_metadata>bb4b004493237e100cbd35befaba10d9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_scope_delete display_value="">446d1859cdca4f34a7ecc80b8969d661</sys_scope_delete>
+        <sys_update_name>sn_doc_template_block_content_bb4b004493237e100cbd35befaba10d9</sys_update_name>
+        <sys_update_version display_value="sn_doc_template_block_content_bb4b004493237e100cbd35befaba10d9">5e6bc04493237e100cbd35befaba10c5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-05 17:34:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

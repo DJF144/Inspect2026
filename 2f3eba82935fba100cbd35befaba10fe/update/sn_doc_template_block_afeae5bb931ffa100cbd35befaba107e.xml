@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_doc_template_block">
+    <sn_doc_template_block action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <name>Inspection Device Block</name>
+        <sys_class_name>sn_doc_template_block</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-05 05:50:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>afeae5bb931ffa100cbd35befaba107e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Inspection Device Block</sys_name>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_update_name>sn_doc_template_block_afeae5bb931ffa100cbd35befaba107e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-05 17:49:43</sys_updated_on>
+        <table>x_1909471_inspec_0_device</table>
+    </sn_doc_template_block>
+</record_update>

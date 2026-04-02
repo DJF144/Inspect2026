@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_doc_template_block">
+    <sn_doc_template_block action="DELETE">
+        <active>true</active>
+        <description/>
+        <name>5</name>
+        <sys_class_name>sn_doc_template_block</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-05 17:06:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>6bc5448893ef3e100cbd35befaba1064</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>5</sys_name>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_update_name>sn_doc_template_block_6bc5448893ef3e100cbd35befaba1064</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-05 17:06:22</sys_updated_on>
+        <table>asset_reclamation_request</table>
+    </sn_doc_template_block>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</application>
+        <file_path/>
+        <instance_id>36a568f1eb15aa5ccbdefceacad0cd7b</instance_id>
+        <instance_name>dev341845</instance_name>
+        <name>sn_doc_template_block_6bc5448893ef3e100cbd35befaba1064</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_doc_template_block"><sn_doc_template_block action="INSERT_OR_UPDATE"><active>true</active><description/><name>5</name><sys_class_name>sn_doc_template_block</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-05 17:06:22</sys_created_on><sys_domain>global</sys_domain><sys_id>6bc5448893ef3e100cbd35befaba1064</sys_id><sys_mod_count>0</sys_mod_count><sys_name>5</sys_name><sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package><sys_policy/><sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope><sys_update_name>sn_doc_template_block_6bc5448893ef3e100cbd35befaba1064</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-05 17:06:22</sys_updated_on><table>asset_reclamation_request</table></sn_doc_template_block></record_update>]]></payload>
+        <payload_hash>-2085973809</payload_hash>
+        <record_name>5</record_name>
+        <reverted_from/>
+        <source>32f6be9a935732100cbd35befaba1083</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-05 17:06:22</sys_created_on>
+        <sys_id>81d5448893ef3e100cbd35befaba106f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19cbef6f9590000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-05 17:06:22</sys_updated_on>
+        <type>Document Template Block</type>
+        <update_guid>41d544888cef3e10f7d563f1c963316e</update_guid>
+        <update_guid_history>41d544888cef3e10f7d563f1c963316e:-2085973809</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="5">9a5cc4c493237e100cbd35befaba10f4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-05 17:34:51</sys_created_on>
+        <sys_db_object display_value="" name="sn_doc_template_block">sn_doc_template_block</sys_db_object>
+        <sys_id>cfbfc8d470ef45448ccf1ee90fd7f2e9</sys_id>
+        <sys_metadata>6bc5448893ef3e100cbd35befaba1064</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>5</sys_name>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_scope_delete display_value="">446d1859cdca4f34a7ecc80b8969d661</sys_scope_delete>
+        <sys_update_name>sn_doc_template_block_6bc5448893ef3e100cbd35befaba1064</sys_update_name>
+        <sys_update_version display_value="sn_doc_template_block_6bc5448893ef3e100cbd35befaba1064">81d5448893ef3e100cbd35befaba106f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-05 17:34:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
