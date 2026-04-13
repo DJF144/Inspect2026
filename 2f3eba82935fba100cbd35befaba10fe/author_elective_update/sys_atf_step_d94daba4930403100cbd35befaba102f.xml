@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="DELETE">
+        <active>true</active>
+        <callable_outputs/>
+        <copied_from/>
+        <description>Confirm that the following UI actions are visible: Generate PDF
+With a failure timeout of 5 Seconds</description>
+        <display_name>UI Action Visibility</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>5</order>
+        <step_config display_value="UI Action Visibility">d8fdf5e10b1022009cfdc71437673adc</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-01 19:46:08</sys_created_on>
+        <sys_id>d94daba4930403100cbd35befaba102f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>UI Action Visibility</sys_name>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_update_name>sys_atf_step_d94daba4930403100cbd35befaba102f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-01 19:46:08</sys_updated_on>
+        <table>x_1909471_inspec_0_device</table>
+        <test display_value="New Device Inspect">dde83580934403100cbd35befaba10a1</test>
+        <timeout>1970-01-01 00:00:05</timeout>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="DELETE" query="document_key=d94daba4930403100cbd35befaba102f"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>d94daba4930403100cbd35befaba102f</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-01 19:46:08</sys_created_on>
+        <sys_id>305d6fa4930403100cbd35befaba102d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-01 19:46:08</sys_updated_on>
+        <value>standard_ui</value>
+        <variable display_value="Form UI">bc43e004c76733005e5c45b881c26046</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>d94daba4930403100cbd35befaba102f</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-01 19:46:08</sys_created_on>
+        <sys_id>745d6fa4930403100cbd35befaba102d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-01 19:46:08</sys_updated_on>
+        <value>856aea5093e332500cbd35befaba10ce</value>
+        <variable display_value="Visible">56e6bee65320220002c6435723dc34b9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>d94daba4930403100cbd35befaba102f</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-01 19:46:08</sys_created_on>
+        <sys_id>b85d6fa4930403100cbd35befaba102d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-01 19:46:08</sys_updated_on>
+        <value/>
+        <variable display_value="Not visible">6619c7aa5320220002c6435723dc34e2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>d94daba4930403100cbd35befaba102f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-01 19:46:08</sys_created_on>
+        <sys_id>fc5d6fa4930403100cbd35befaba102d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-01 19:46:08</sys_updated_on>
+        <value>x_1909471_inspec_0_device</value>
+        <variable display_value="Table">ba62b4075320220002c6435723dc34b9</variable>
+    </sys_variable_value>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</application>
+        <file_path/>
+        <instance_id>36a568f1eb15aa5ccbdefceacad0cd7b</instance_id>
+        <instance_name>dev341845</instance_name>
+        <name>sys_atf_step_d94daba4930403100cbd35befaba102f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step"><sys_atf_step action="INSERT_OR_UPDATE"><active>true</active><callable_outputs/><copied_from/><description>Confirm that the following UI actions are visible: Generate PDF
+With a failure timeout of 5 Seconds</description><display_name>UI Action Visibility</display_name><inputs/><mugshots_cache_json/><notes/><order>5</order><step_config display_value="UI Action Visibility">d8fdf5e10b1022009cfdc71437673adc</step_config><sys_class_name>sys_atf_step</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-01 19:46:08</sys_created_on><sys_id>d94daba4930403100cbd35befaba102f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>UI Action Visibility</sys_name><sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package><sys_policy/><sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope><sys_update_name>sys_atf_step_d94daba4930403100cbd35befaba102f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-01 19:46:08</sys_updated_on><table>x_1909471_inspec_0_device</table><test display_value="New Device Inspect">dde83580934403100cbd35befaba10a1</test><timeout>1970-01-01 00:00:05</timeout><warning_message/></sys_atf_step><sys_variable_value action="delete_multiple" query="document_key=d94daba4930403100cbd35befaba102f"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>d94daba4930403100cbd35befaba102f</document_key><order>50</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-01 19:46:08</sys_created_on><sys_id>305d6fa4930403100cbd35befaba102d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-01 19:46:08</sys_updated_on><value>standard_ui</value><variable display_value="Form UI">bc43e004c76733005e5c45b881c26046</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>d94daba4930403100cbd35befaba102f</document_key><order>200</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-01 19:46:08</sys_created_on><sys_id>745d6fa4930403100cbd35befaba102d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-01 19:46:08</sys_updated_on><value>856aea5093e332500cbd35befaba10ce</value><variable display_value="Visible">56e6bee65320220002c6435723dc34b9</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>d94daba4930403100cbd35befaba102f</document_key><order>300</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-01 19:46:08</sys_created_on><sys_id>b85d6fa4930403100cbd35befaba102d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-01 19:46:08</sys_updated_on><value/><variable display_value="Not visible">6619c7aa5320220002c6435723dc34e2</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>d94daba4930403100cbd35befaba102f</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-01 19:46:08</sys_created_on><sys_id>fc5d6fa4930403100cbd35befaba102d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-01 19:46:08</sys_updated_on><value>x_1909471_inspec_0_device</value><variable display_value="Table">ba62b4075320220002c6435723dc34b9</variable></sys_variable_value></record_update>]]></payload>
+        <payload_hash>-159052325</payload_hash>
+        <record_name>UI Action Visibility</record_name>
+        <reverted_from/>
+        <source>32f6be9a935732100cbd35befaba1083</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-01 19:46:08</sys_created_on>
+        <sys_id>b05d6fa4930403100cbd35befaba1032</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d4a94f2560000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-01 19:46:08</sys_updated_on>
+        <type>Test Step</type>
+        <update_guid>705d6fa4660403109697cbcdb83c0631</update_guid>
+        <update_guid_history>705d6fa4660403109697cbcdb83c0631:-159052325</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-01 21:10:56</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_step">sys_atf_step</sys_db_object>
+        <sys_id>2505bdfc226c410b95524049057538b1</sys_id>
+        <sys_metadata>d94daba4930403100cbd35befaba102f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>UI Action Visibility</sys_name>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_scope_delete display_value="">446d1859cdca4f34a7ecc80b8969d661</sys_scope_delete>
+        <sys_update_name>sys_atf_step_d94daba4930403100cbd35befaba102f</sys_update_name>
+        <sys_update_version display_value="sys_atf_step_d94daba4930403100cbd35befaba102f">b05d6fa4930403100cbd35befaba1032</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-01 21:10:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -8,81 +8,81 @@
         <inputs/>
         <mugshots_cache_json/>
         <notes/>
-        <order>4</order>
+        <order>2</order>
         <step_config display_value="Open a New Form">05317cd10b10220050192f15d6673af8</step_config>
         <sys_class_name>sys_atf_step</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-03-30 22:50:37</sys_created_on>
-        <sys_id>b8340a88938403100cbd35befaba106c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2026-04-01 18:52:07</sys_created_on>
+        <sys_id>1380aba8938003100cbd35befaba10e3</sys_id>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Open a New Form</sys_name>
         <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
         <sys_policy/>
         <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
-        <sys_update_name>sys_atf_step_b8340a88938403100cbd35befaba106c</sys_update_name>
+        <sys_update_name>sys_atf_step_1380aba8938003100cbd35befaba10e3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-30 22:50:37</sys_updated_on>
+        <sys_updated_on>2026-04-01 19:02:41</sys_updated_on>
         <table>x_1909471_inspec_0_device</table>
-        <test display_value="New Device Inspect">dde83580934403100cbd35befaba10a1</test>
+        <test display_value="PDF Generation">0c40a3a8938003100cbd35befaba1095</test>
         <timeout/>
         <warning_message/>
     </sys_atf_step>
-    <sys_variable_value action="delete_multiple" query="document_key=b8340a88938403100cbd35befaba106c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1380aba8938003100cbd35befaba10e3"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_atf_step</document>
-        <document_key>b8340a88938403100cbd35befaba106c</document_key>
+        <document_key>1380aba8938003100cbd35befaba10e3</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-01 18:52:08</sys_created_on>
+        <sys_id>25f0632c938003100cbd35befaba104d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-01 18:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="View">27d4e1c25320220002c6435723dc3486</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>1380aba8938003100cbd35befaba10e3</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-03-30 22:50:37</sys_created_on>
-        <sys_id>2f544e88938403100cbd35befaba10b2</sys_id>
+        <sys_created_on>2026-04-01 18:52:08</sys_created_on>
+        <sys_id>69f0632c938003100cbd35befaba104d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-30 22:50:37</sys_updated_on>
+        <sys_updated_on>2026-04-01 18:52:08</sys_updated_on>
         <value>record</value>
         <variable display_value="Record path">3a662f60a3023110571967d1361e6134</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_atf_step</document>
-        <document_key>b8340a88938403100cbd35befaba106c</document_key>
+        <document_key>1380aba8938003100cbd35befaba10e3</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-03-30 22:50:37</sys_created_on>
-        <sys_id>63544e88938403100cbd35befaba10b3</sys_id>
+        <sys_created_on>2026-04-01 18:52:08</sys_created_on>
+        <sys_id>adf0632c938003100cbd35befaba104d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-30 22:50:37</sys_updated_on>
+        <sys_updated_on>2026-04-01 18:52:08</sys_updated_on>
         <value>x_1909471_inspec_0_device</value>
         <variable display_value="Table">bb84ed825320220002c6435723dc3400</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_atf_step</document>
-        <document_key>b8340a88938403100cbd35befaba106c</document_key>
+        <document_key>1380aba8938003100cbd35befaba10e3</document_key>
         <order>50</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-03-30 22:50:37</sys_created_on>
-        <sys_id>a7544e88938403100cbd35befaba10b1</sys_id>
+        <sys_created_on>2026-04-01 18:52:08</sys_created_on>
+        <sys_id>edf0632c938003100cbd35befaba104c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-30 22:50:37</sys_updated_on>
+        <sys_updated_on>2026-04-01 18:52:08</sys_updated_on>
         <value>standard_ui</value>
         <variable display_value="Form UI">6f2a59a4e7133300b5646ea8c2f6a975</variable>
     </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_atf_step</document>
-        <document_key>b8340a88938403100cbd35befaba106c</document_key>
-        <order>200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-03-30 22:50:37</sys_created_on>
-        <sys_id>e7544e88938403100cbd35befaba10b2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-30 22:50:37</sys_updated_on>
-        <value/>
-        <variable display_value="View">27d4e1c25320220002c6435723dc3486</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_05317cd10b10220050192f15d6673af8^id=b8340a88938403100cbd35befaba106c"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_05317cd10b10220050192f15d6673af8^id=1380aba8938003100cbd35befaba10e3"/>
 </record_update>

@@ -7,5 +7,6 @@
                 <element inactive_on_update="false" label="Mobile Phone" sequence="0" value="Mobile Phone"/>
             </choice>
         </element>
+        <element label="Customer Name" max_length="40" name="customer_name" type="string"/>
     </element>
 </database>

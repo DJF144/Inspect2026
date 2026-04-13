@@ -2,7 +2,7 @@
     <sys_ui_related sys_domain="global" table="x_1909471_inspec_0_device" version="2" view="workspace-inspect-2026-0">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Device - Workspace Inspect 2026 0" name="x_1909471_inspec_0_device" related_list="NULL" sys_domain="global" view="e18ae0c0db277e10b66d416bedcb818d">738a28c093277e100cbd35befaba102c</list_id>
+            <list_id display_value="Elevators - Workspace Inspect 2026 0" name="x_1909471_inspec_0_device" related_list="NULL" sys_domain="global" view="e18ae0c0db277e10b66d416bedcb818d">738a28c093277e100cbd35befaba102c</list_id>
             <order_by/>
             <position>0</position>
             <related_list/>
@@ -15,7 +15,7 @@
             <sys_updated_on>2026-03-05 19:46:51</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
-            <calculated_name>Device - Workspace Inspect 2026 0</calculated_name>
+            <calculated_name>Elevators - Workspace Inspect 2026 0</calculated_name>
             <filter/>
             <name>x_1909471_inspec_0_device</name>
             <order_by/>

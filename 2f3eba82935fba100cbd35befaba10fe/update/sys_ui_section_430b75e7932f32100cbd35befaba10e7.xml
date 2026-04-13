@@ -1,119 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_ui_section caption="Frame &amp; Body" section_id="430b75e7932f32100cbd35befaba10e7" sys_domain="global" table="x_1909471_inspec_0_device" version="3" view="">
+    <sys_ui_section caption="General Operation" section_id="430b75e7932f32100cbd35befaba10e7" sys_domain="global" table="x_1909471_inspec_0_device" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>frame</element>
+            <element>elevator_starts_and_stops_smoothly</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-20 19:54:51</sys_created_on>
-            <sys_id>df3c31f093b7b2100cbd35befaba1096</sys_id>
+            <sys_created_on>2026-04-10 21:40:26</sys_created_on>
+            <sys_id>76cdde2f9380c3100cbd35befaba1065</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Frame &amp; Body" display_value="Frame &amp; Body" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">430b75e7932f32100cbd35befaba10e7</sys_ui_section>
+            <sys_ui_section caption="General Operation" display_value="General Operation" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">430b75e7932f32100cbd35befaba10e7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-20 19:54:51</sys_updated_on>
+            <sys_updated_on>2026-04-10 21:40:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>back_glass_cover</element>
+            <element>no_unusual_noises_or_vibrations</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-20 19:54:51</sys_created_on>
-            <sys_id>5f3c31f093b7b2100cbd35befaba1097</sys_id>
+            <sys_created_on>2026-04-10 21:40:26</sys_created_on>
+            <sys_id>f2cdde2f9380c3100cbd35befaba1066</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Frame &amp; Body" display_value="Frame &amp; Body" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">430b75e7932f32100cbd35befaba10e7</sys_ui_section>
+            <sys_ui_section caption="General Operation" display_value="General Operation" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">430b75e7932f32100cbd35befaba10e7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-20 19:54:51</sys_updated_on>
+            <sys_updated_on>2026-04-10 21:40:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>sim_tray</element>
+            <element>general_operation_notes</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-20 19:54:51</sys_created_on>
-            <sys_id>db3c31f093b7b2100cbd35befaba1098</sys_id>
+            <sys_created_on>2026-04-10 21:40:26</sys_created_on>
+            <sys_id>72cdde2f9380c3100cbd35befaba1067</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Frame &amp; Body" display_value="Frame &amp; Body" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">430b75e7932f32100cbd35befaba10e7</sys_ui_section>
+            <sys_ui_section caption="General Operation" display_value="General Operation" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">430b75e7932f32100cbd35befaba10e7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-20 19:54:51</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>physical_condition_notes</element>
-            <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-20 19:54:51</sys_created_on>
-            <sys_id>5b3c31f093b7b2100cbd35befaba1099</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Frame &amp; Body" display_value="Frame &amp; Body" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">430b75e7932f32100cbd35befaba10e7</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-20 19:54:51</sys_updated_on>
+            <sys_updated_on>2026-04-10 21:40:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>4</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-20 19:54:51</sys_created_on>
-            <sys_id>d73c31f093b7b2100cbd35befaba109a</sys_id>
+            <sys_created_on>2026-04-10 21:40:26</sys_created_on>
+            <sys_id>fecdde2f9380c3100cbd35befaba1067</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Frame &amp; Body" display_value="Frame &amp; Body" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">430b75e7932f32100cbd35befaba10e7</sys_ui_section>
+            <sys_ui_section caption="General Operation" display_value="General Operation" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">430b75e7932f32100cbd35befaba10e7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-20 19:54:51</sys_updated_on>
+            <sys_updated_on>2026-04-10 21:40:26</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>buttons_side_volume</element>
+            <element>doors_open_and_close_properly</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-10 21:40:26</sys_created_on>
+            <sys_id>7ecdde2f9380c3100cbd35befaba1068</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="General Operation" display_value="General Operation" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">430b75e7932f32100cbd35befaba10e7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-10 21:40:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>floor_leveling_is_accurate</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-20 19:54:51</sys_created_on>
-            <sys_id>573c31f093b7b2100cbd35befaba109b</sys_id>
+            <sys_created_on>2026-04-10 21:40:26</sys_created_on>
+            <sys_id>facdde2f9380c3100cbd35befaba1069</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Frame &amp; Body" display_value="Frame &amp; Body" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">430b75e7932f32100cbd35befaba10e7</sys_ui_section>
+            <sys_ui_section caption="General Operation" display_value="General Operation" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">430b75e7932f32100cbd35befaba10e7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-20 19:54:51</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>charging_port</element>
-            <position>6</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-20 19:54:51</sys_created_on>
-            <sys_id>d33c31f093b7b2100cbd35befaba109c</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Frame &amp; Body" display_value="Frame &amp; Body" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">430b75e7932f32100cbd35befaba10e7</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-20 19:54:51</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>usb_c_port</element>
-            <position>7</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-20 19:54:51</sys_created_on>
-            <sys_id>533c31f093b7b2100cbd35befaba109d</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Frame &amp; Body" display_value="Frame &amp; Body" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">430b75e7932f32100cbd35befaba10e7</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-20 19:54:51</sys_updated_on>
+            <sys_updated_on>2026-04-10 21:40:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
-            <caption>Frame &amp; Body</caption>
+            <caption>General Operation</caption>
             <header>false</header>
             <name>x_1909471_inspec_0_device</name>
             <roles/>
@@ -123,7 +95,7 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>430b75e7932f32100cbd35befaba10e7</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>4</sys_mod_count>
             <sys_name>x_1909471_inspec_0_device</sys_name>
             <sys_overrides/>
             <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
@@ -131,7 +103,7 @@
             <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
             <sys_update_name>sys_ui_section_430b75e7932f32100cbd35befaba10e7</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-20 19:24:26</sys_updated_on>
+            <sys_updated_on>2026-04-10 21:19:13</sys_updated_on>
             <sys_user/>
             <title>false</title>
             <view display_value="Default view" name="NULL">Default view</view>

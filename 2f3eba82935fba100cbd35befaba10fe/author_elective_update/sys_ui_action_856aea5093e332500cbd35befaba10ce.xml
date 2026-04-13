@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="DELETE">
+        <action_name>generate_pdf</action_name>
+        <active>false</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+    g_form.save().then(function() {
+        g_form.reload(); // reloads full record + UI state
+    });
+}]]></client_script_v2>
+        <comments/>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>true</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style>primary</form_style>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Generate PDF</name>
+        <onclick>generateInspectionReport()</onclick>
+        <order>100</order>
+        <script><![CDATA[var documentTemplateId = '42dee4b39357fa100cbd35befaba10a5';
+var recordId = current.getUniqueValue();
+
+var response = new sn_doc.GenerateDocumentAPI().generateDocumentForTask(
+    recordId, documentTemplateId, "InspectionReport");
+
+if (!response || !response.value) {
+    gs.error("Document generation failed. Response: " + JSON.stringify(response));
+} else {
+    gs.info("Document generated: " + response.value);
+}
+
+action.setRedirectURL(current);
+
+]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-07 00:10:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>856aea5093e332500cbd35befaba10ce</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_name>Generate PDF</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_update_name>sys_ui_action_856aea5093e332500cbd35befaba10ce</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 23:17:01</sys_updated_on>
+        <table>x_1909471_inspec_0_device</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</application>
+        <file_path/>
+        <instance_id>36a568f1eb15aa5ccbdefceacad0cd7b</instance_id>
+        <instance_name>dev341845</instance_name>
+        <name>sys_ui_action_856aea5093e332500cbd35befaba10ce</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;generate_pdf&lt;/action_name&gt;&lt;active&gt;false&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+    g_form.save().then(function() {
+        g_form.reload(); // reloads full record + UI state
+    });
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition/&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;true&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style&gt;primary&lt;/form_style&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Generate PDF&lt;/name&gt;&lt;onclick&gt;generateInspectionReport()&lt;/onclick&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[var documentTemplateId = '42dee4b39357fa100cbd35befaba10a5';
+var recordId = current.getUniqueValue();
+
+var response = new sn_doc.GenerateDocumentAPI().generateDocumentForTask(
+    recordId, documentTemplateId, "InspectionReport");
+
+if (!response || !response.value) {
+    gs.error("Document generation failed. Response: " + JSON.stringify(response));
+} else {
+    gs.info("Document generated: " + response.value);
+}
+
+action.setRedirectURL(current);
+
+]]&gt;&lt;/script&gt;&lt;show_insert&gt;false&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-07 00:10:07&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;856aea5093e332500cbd35befaba10ce&lt;/sys_id&gt;&lt;sys_mod_count&gt;34&lt;/sys_mod_count&gt;&lt;sys_name&gt;Generate PDF&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Inspect 2026" source="x_1909471_inspec_0"&gt;2f3eba82935fba100cbd35befaba10fe&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Inspect 2026"&gt;2f3eba82935fba100cbd35befaba10fe&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_856aea5093e332500cbd35befaba10ce&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-04-10 23:17:01&lt;/sys_updated_on&gt;&lt;table&gt;x_1909471_inspec_0_device&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>625307496</payload_hash>
+        <record_name>Generate PDF</record_name>
+        <reverted_from/>
+        <source>32f6be9a935732100cbd35befaba1083</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 23:17:01</sys_created_on>
+        <sys_id>e9e37a6b9344c3100cbd35befaba10ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d79af3ed30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 23:17:01</sys_updated_on>
+        <type>UI Action</type>
+        <update_guid>29e37a6b7944c3109747762b3839e4fe</update_guid>
+        <update_guid_history>29e37a6b7944c3109747762b3839e4fe:625307496,92ba26d57e0c4710f8b37e13cb788895:1038075391,b21aee55c20c4710ea70c308d7b6d7d9:-616090826,90991d599e40471081375f4d974a9bd4:808331193,2d0775c9b244c310282fd752b3555af0:1103003420,480735c9bf44c3107cda9c2b21d8dbb8:1214559824,4613fd81cd44c310b777ec4bc8687aaf:-28387579,1803f9818c44c3109bf903b712de16ff:-1310310401,3ed27581bb44c31033d2439f33fe29e8:-473591629,ba9f29c98804c310f58b90cb3652621f:-1926658076,2f1f25899c04c3100b4a657feef81f10:808331193,8dcb11e25eabb210e20d9d8e55a1eb4f:-1067322554,7ab65c5a86a332105c45b3b615d0bcfc:492944562,579ac852fe633210af0ce298567aa496:367747684,67251bb55e273210853dd9981e513a66:-974556307,682597b554273210d4c786f3b72b2fdb:367747684,3cdbfa7d902332109de50f22b80ac866:-716335821,2acdcf9826e7325028b27f359bd8aaa2:-1036730614,32598b50c6e73250393c794ccbb71dd4:-1777087093,3139c750dee73250b02da82a94c2150f:1848050511,7ad8cb9c04a73250d65d06a24b9fb85d:1407341820,b61687d83fa73250ab55f247315cfd1e:-940600626,a6f283d014a732502663bbda7e6f441b:-1308799392,36528f90a3a73250779c5a5fc62fcd19:-1247970962,d1424b9086a73250441f7be9d7bffed9:1065181652,71818b10caa73250eb235df1817b56e6:-1818668187,70cefe9826673250cf99110f7785f3b3:-657379640,179eba9883673250b31c1d36cc27bbe0:-1999369559,7846b658db2732507b07635468553151:-894452843,4995b618ac273250e0d6babd50144089:1760599548,123536d46c2732502a0f07be16333d4c:242440295,7705b2d45f2732503eddbab4e59a532c:475914215,7971329cf4e33250c7533f6f0df22b14:-690196845,71a0fa5c72e332502616a709888cf99c:1651433261,ce60365c90e33250764dfe68aa2d9de3:-1967678877</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 23:45:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_action">sys_ui_action</sys_db_object>
+        <sys_id>36da38755bb6433fb4f31312916efd09</sys_id>
+        <sys_metadata>856aea5093e332500cbd35befaba10ce</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Generate PDF</sys_name>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_parent display_value="Elevators">50221e8f9353b6100cbd35befaba1030</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_scope_delete display_value="">446d1859cdca4f34a7ecc80b8969d661</sys_scope_delete>
+        <sys_update_name>sys_ui_action_856aea5093e332500cbd35befaba10ce</sys_update_name>
+        <sys_update_version display_value="sys_ui_action_856aea5093e332500cbd35befaba10ce">e9e37a6b9344c3100cbd35befaba10ff</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 23:45:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

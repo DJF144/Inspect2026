@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="doors_open_and_close_properly" label="Doors open and close properly" language="en" table="x_1909471_inspec_0_device">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>doors_open_and_close_properly</element>
+            <help/>
+            <hint/>
+            <label>Doors open and close properly</label>
+            <language>en</language>
+            <name>x_1909471_inspec_0_device</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-10 21:19:10</sys_created_on>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_name>Doors open and close properly</sys_name>
+            <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+            <sys_update_name>sys_documentation_x_1909471_inspec_0_device_doors_open_and_close_properly_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-10 21:47:11</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

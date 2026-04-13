@@ -1,63 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_ui_section caption="Battery" section_id="4ae8b9ac937732100cbd35befaba104c" sys_domain="global" table="x_1909471_inspec_0_device" version="3" view="">
+    <sys_ui_section caption="Cab Interior" section_id="4ae8b9ac937732100cbd35befaba104c" sys_domain="global" table="x_1909471_inspec_0_device" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>battery_health</element>
+            <element>lighting_works_properly</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-20 19:54:51</sys_created_on>
-            <sys_id>5b3c31f093b7b2100cbd35befaba10aa</sys_id>
+            <sys_created_on>2026-04-10 21:30:56</sys_created_on>
+            <sys_id>bb9b1ae79380c3100cbd35befaba1037</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Battery" display_value="Battery" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">4ae8b9ac937732100cbd35befaba104c</sys_ui_section>
+            <sys_ui_section caption="Cab Interior" display_value="Cab Interior" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">4ae8b9ac937732100cbd35befaba104c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-20 19:54:51</sys_updated_on>
+            <sys_updated_on>2026-04-10 21:30:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>battery_charging_notes</element>
+            <element>mirrors_panels_not_damaged</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-20 19:54:51</sys_created_on>
-            <sys_id>d73c31f093b7b2100cbd35befaba10ab</sys_id>
+            <sys_created_on>2026-04-10 21:30:56</sys_created_on>
+            <sys_id>779b1ae79380c3100cbd35befaba1038</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Battery" display_value="Battery" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">4ae8b9ac937732100cbd35befaba104c</sys_ui_section>
+            <sys_ui_section caption="Cab Interior" display_value="Cab Interior" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">4ae8b9ac937732100cbd35befaba104c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-20 19:54:51</sys_updated_on>
+            <sys_updated_on>2026-04-10 21:30:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cab_interior_notes</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-10 21:30:56</sys_created_on>
+            <sys_id>339b1ae79380c3100cbd35befaba1039</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Cab Interior" display_value="Cab Interior" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">4ae8b9ac937732100cbd35befaba104c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-10 21:30:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>2</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-20 19:54:51</sys_created_on>
-            <sys_id>573c31f093b7b2100cbd35befaba10ac</sys_id>
+            <sys_created_on>2026-04-10 21:30:56</sys_created_on>
+            <sys_id>fb9b1ae79380c3100cbd35befaba1039</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Battery" display_value="Battery" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">4ae8b9ac937732100cbd35befaba104c</sys_ui_section>
+            <sys_ui_section caption="Cab Interior" display_value="Cab Interior" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">4ae8b9ac937732100cbd35befaba104c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-20 19:54:51</sys_updated_on>
+            <sys_updated_on>2026-04-10 21:30:56</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>charging</element>
-            <position>3</position>
+            <element>ventilation_fan_operational</element>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-20 19:54:51</sys_created_on>
-            <sys_id>d33c31f093b7b2100cbd35befaba10ad</sys_id>
+            <sys_created_on>2026-04-10 21:30:56</sys_created_on>
+            <sys_id>b79b1ae79380c3100cbd35befaba103a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Battery" display_value="Battery" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">4ae8b9ac937732100cbd35befaba104c</sys_ui_section>
+            <sys_ui_section caption="Cab Interior" display_value="Cab Interior" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">4ae8b9ac937732100cbd35befaba104c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-20 19:54:51</sys_updated_on>
+            <sys_updated_on>2026-04-10 21:30:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>handrails_secure_if_present</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-10 21:30:56</sys_created_on>
+            <sys_id>739b1ae79380c3100cbd35befaba103b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Cab Interior" display_value="Cab Interior" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">4ae8b9ac937732100cbd35befaba104c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-10 21:30:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
-            <caption>Battery</caption>
+            <caption>Cab Interior</caption>
             <header>false</header>
             <name>x_1909471_inspec_0_device</name>
             <roles/>
@@ -67,7 +95,7 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>4ae8b9ac937732100cbd35befaba104c</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_name>x_1909471_inspec_0_device</sys_name>
             <sys_overrides/>
             <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
@@ -75,7 +103,7 @@
             <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
             <sys_update_name>sys_ui_section_4ae8b9ac937732100cbd35befaba104c</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-20 19:54:51</sys_updated_on>
+            <sys_updated_on>2026-04-10 21:26:39</sys_updated_on>
             <sys_user/>
             <title>false</title>
             <view display_value="Default view" name="NULL">Default view</view>

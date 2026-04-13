@@ -54,7 +54,7 @@
 </td>
 <td style="padding: 12px 18px; border-bottom: 1px solid #d0dfee; vertical-align: top; text-align: right;" width="50%">
 <div style="font-size: 8px; font-weight: bold; letter-spacing: 1.5px; text-transform: uppercase; color: #7a94ad; margin-bottom: 4px;">Model</div>
-<div style="font-size: 13px; font-weight: 500; color: #1a2e3d;">${model}</div>
+<div style="font-size: 13px; font-weight: 500; color: #1a2e3d;">${device_model}</div>
 </td>
 </tr>
 <tr>
@@ -197,14 +197,19 @@
 </tr>
 </tbody>
 </table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 </td>
 </tr>
 </tbody>
 </table>
+<p>&nbsp;</p>
+<p>IMEI / Serial No.: ${device_serial_number}<br><br>Image HTML: &lt;img src="<a href="https://dev341845.service-now.com/sys_attachment.do?sys_id=bef5d153938803100cbd35befaba10fb&amp;view=true">https://dev341845.service-now.com/sys_attachment.do?sys_id=bef5d153938803100cbd35befaba10fb&amp;view=true</a>" style="width:300px;height:auto;margin:10px;" /&gt;</p>
 </td>
 </tr>
 </tbody>
-</table>]]></html_script_body>
+</table>
+<p>&nbsp;</p>]]></html_script_body>
         <language>en</language>
         <left_right_margin>36</left_right_margin>
         <name>PDF Report HTML</name>
@@ -222,14 +227,14 @@
         <sys_created_on>2026-03-05 01:32:47</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>42dee4b39357fa100cbd35befaba10a5</sys_id>
-        <sys_mod_count>52</sys_mod_count>
+        <sys_mod_count>56</sys_mod_count>
         <sys_name>PDF Report HTML</sys_name>
         <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
         <sys_policy/>
         <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
         <sys_update_name>sn_doc_html_template_42dee4b39357fa100cbd35befaba10a5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-20 20:06:35</sys_updated_on>
+        <sys_updated_on>2026-04-09 21:56:00</sys_updated_on>
         <table>x_1909471_inspec_0_device</table>
         <template_date_format/>
         <toc_config/>

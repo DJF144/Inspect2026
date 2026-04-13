@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1909471_inspec_0.OrderPDFGenerator</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>OrderPDFGenerator</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var OrderPDFGenerator = Class.create();
+OrderPDFGenerator.prototype = {
+
+    initialize: function() {},
+
+    generate: function(orderSysId) {
+
+        var orderGr = new GlideRecord('x_1909471_inspec_0_order');
+        if (!orderGr.get(orderSysId)) {
+            gs.info('Order record not found');
+            return;
+        }
+
+        var devices = [];
+        var deviceGr = new GlideRecord('x_1909471_inspec_0_device');
+        deviceGr.addQuery('parent', orderSysId);
+        deviceGr.query();
+
+        while (deviceGr.next()) {
+
+            var imageHtml = '';
+            var attGr = new GlideRecord('sys_attachment');
+            attGr.addQuery('table_name', 'x_1909471_inspec_0_device');
+            attGr.addQuery('table_sys_id', deviceGr.sys_id.toString());
+            attGr.addQuery('content_type', 'STARTSWITH', 'image/');
+            attGr.orderByDesc('sys_created_on');
+            attGr.setLimit(1);
+            attGr.query();
+
+            if (attGr.next()) {
+                var ab = new GlideSysAttachment();
+                var base64 = ab.getContentBase64(attGr);
+                var contentType = attGr.content_type.toString();
+                imageHtml = '<img src="data:' + contentType + ';base64,' + base64 + '" style="max-width:250px; height:auto; border-radius:6px; border:1px solid #eee;" />';
+            }
+
+            var inspectionFields = [
+                { label: 'Elevator starts and stops smoothly', value: deviceGr.getDisplayValue('elevator_starts_and_stops_smoothly') },
+                { label: 'No unusual noises or vibrations', value: deviceGr.getDisplayValue('no_unusual_noises_or_vibrations') },
+                { label: 'Doors open and close properly', value: deviceGr.getDisplayValue('doors_open_and_close_properly') },
+                { label: 'Floor leveling is accurate', value: deviceGr.getDisplayValue('floor_leveling_is_accurate') },
+                { label: 'Emergency stop button works', value: deviceGr.getDisplayValue('emergency_stop_button_works') },
+                { label: 'Alarm bell functions', value: deviceGr.getDisplayValue('alarm_bell_functions') },
+                { label: 'Emergency phone/intercom works', value: deviceGr.getDisplayValue('emergency_phone_works') },
+                { label: 'Overload warning system operational', value: deviceGr.getDisplayValue('overload_warning_system_operational') },
+                { label: 'Door sensors (reopen function) working', value: deviceGr.getDisplayValue('door_sensors_reopen_function_working') },
+                { label: 'No door obstructions or damage', value: deviceGr.getDisplayValue('no_door_obstructions_or_damage') },
+                { label: 'Hall call buttons functioning', value: deviceGr.getDisplayValue('hall_call_buttons_functioning') },
+                { label: 'Lighting works properly', value: deviceGr.getDisplayValue('lighting_works_properly') },
+                { label: 'Ventilation fan operational', value: deviceGr.getDisplayValue('ventilation_fan_operational') },
+                { label: 'Handrails secure (if present)', value: deviceGr.getDisplayValue('handrails_secure_if_present') },
+                { label: 'Mirrors/panels not damaged', value: deviceGr.getDisplayValue('mirrors_panels_not_damaged') }
+            ];
+
+            var failedItems = [];
+            for (var f = 0; f < inspectionFields.length; f++) {
+                if (inspectionFields[f].value == 'Failed') {
+                    failedItems.push(inspectionFields[f].label);
+                }
+            }
+
+            devices.push({
+                number: deviceGr.getDisplayValue('number'),
+                serial: deviceGr.getDisplayValue('device_serial_number'),
+                opened_at: deviceGr.getDisplayValue('opened_at'),
+                building: deviceGr.getDisplayValue('building'),
+                manufacturer: deviceGr.getDisplayValue('manufacturer'),
+                device_model: deviceGr.getDisplayValue('device_model'),
+                elevator_starts_and_stops_smoothly: deviceGr.getDisplayValue('elevator_starts_and_stops_smoothly'),
+                no_unusual_noises_or_vibrations: deviceGr.getDisplayValue('no_unusual_noises_or_vibrations'),
+                doors_open_and_close_properly: deviceGr.getDisplayValue('doors_open_and_close_properly'),
+                floor_leveling_is_accurate: deviceGr.getDisplayValue('floor_leveling_is_accurate'),
+                general_operation_notes: deviceGr.getDisplayValue('general_operation_notes'),
+                emergency_stop_button_works: deviceGr.getDisplayValue('emergency_stop_button_works'),
+                alarm_bell_functions: deviceGr.getDisplayValue('alarm_bell_functions'),
+                emergency_phone_works: deviceGr.getDisplayValue('emergency_phone_works'),
+                overload_warning_system_operational: deviceGr.getDisplayValue('overload_warning_system_operational'),
+                safety_features_notes: deviceGr.getDisplayValue('safety_features_notes'),
+                door_sensors_reopen_function_working: deviceGr.getDisplayValue('door_sensors_reopen_function_working'),
+                no_door_obstructions_or_damage: deviceGr.getDisplayValue('no_door_obstructions_or_damage'),
+                hall_call_buttons_functioning: deviceGr.getDisplayValue('hall_call_buttons_functioning'),
+                doors_entrances_notes: deviceGr.getDisplayValue('doors_entrances_notes'),
+                lighting_works_properly: deviceGr.getDisplayValue('lighting_works_properly'),
+                ventilation_fan_operational: deviceGr.getDisplayValue('ventilation_fan_operational'),
+                handrails_secure_if_present: deviceGr.getDisplayValue('handrails_secure_if_present'),
+                mirrors_panels_not_damaged: deviceGr.getDisplayValue('mirrors_panels_not_damaged'),
+                cab_interior_notes: deviceGr.getDisplayValue('cab_interior_notes'),
+                failedItems: failedItems,
+                image: imageHtml
+            });
+        }
+
+        var html = this._buildHTML(orderGr, devices);
+
+        try {
+            var pdfGen = new sn_pdfgeneratorutils.PDFGenerationAPI();
+            var result = pdfGen.convertToPDF(
+                html,
+                'x_1909471_inspec_0_order',
+                orderSysId,
+                'Order_Report_' + orderGr.getDisplayValue('number')
+            );
+            gs.info('PDF result: ' + JSON.stringify(result));
+        } catch(e) {
+            gs.info('PDF Error: ' + e.message);
+        }
+    },
+
+    _buildHTML: function(orderGr, devices) {
+
+        var html = '<!DOCTYPE html>';
+        html += '<html><head><style>';
+        html += '* { box-sizing: border-box; margin: 0; padding: 0; }';
+        html += 'body { font-family: Arial, sans-serif; color: #333; background: #fff; }';
+
+        // Page settings
+        html += '@page { size: A4; margin-top: 10mm; margin-bottom: 15mm; margin-left: 15mm; margin-right: 15mm; }';
+        html += '@page :first { margin-top: 15mm; }';
+
+        // Page break
+        html += '.page-break { page-break-before: always; }';
+
+        // Title page header
+        html += '.header { background: #003366; color: white; padding: 40px 30px; margin-bottom: 30px; }';
+        html += '.header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 6px; }';
+        html += '.header p { font-size: 13px; opacity: 0.8; }';
+
+        // Section
+        html += '.section { padding: 0 30px 20px 30px; }';
+        html += '.section h2 { color: #003366; font-size: 14px; border-bottom: 2px solid #003366; padding-bottom: 6px; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px; }';
+
+        // Two columns
+        html += '.two-col { display: flex; gap: 30px; }';
+        html += '.col { flex: 1; }';
+        html += '.field-row { display: flex; margin-bottom: 7px; }';
+        html += '.field-label { font-weight: bold; width: 160px; color: #555; font-size: 12px; }';
+        html += '.field-value { flex: 1; font-size: 12px; }';
+
+        // Summary table
+        html += '.summary-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }';
+        html += '.summary-table th { background: #f0f4f8; color: #003366; font-size: 12px; padding: 8px 12px; text-align: left; border: 1px solid #ddd; }';
+        html += '.summary-table td { font-size: 12px; padding: 8px 12px; border: 1px solid #ddd; vertical-align: top; }';
+        html += '.summary-table tr:nth-child(even) { background: #f9f9f9; }';
+        html += '.failed-item { color: #c62828; font-size: 12px; margin-bottom: 3px; }';
+        html += '.failed-item:before { content: "— "; }';
+        html += '.no-issues { color: #2e7d32; font-size: 12px; font-style: italic; }';
+
+        // Elevator header
+        html += '.elevator-header { background: #003366; color: white; padding: 10px 18px; font-size: 13px; font-weight: bold; border-radius: 8px 8px 0 0; margin: 0 30px 0 30px; }';
+
+        // Device card body
+        html += '.device-card-body { border: 1px solid #ddd; border-top: none; border-radius: 0 0 8px 8px; padding: 18px; margin: 0 30px 25px 30px; }';
+        html += '.device-info { margin-bottom: 18px; }';
+
+        // Inspection section
+        html += '.inspection-section { margin-bottom: 18px; border: 1px solid #e0e0e0; border-radius: 6px; overflow: hidden; }';
+        html += '.inspection-section-header { background: #f0f4f8; color: #003366; font-size: 12px; font-weight: bold; padding: 7px 12px; border-bottom: 1px solid #e0e0e0; }';
+        html += '.inspection-table { width: 100%; border-collapse: collapse; }';
+        html += '.inspection-table td { font-size: 12px; padding: 6px 12px; border-bottom: 1px solid #f0f0f0; }';
+        html += '.inspection-table td:first-child { color: #444; width: 75%; }';
+        html += '.inspection-table td:last-child { width: 25%; font-weight: bold; }';
+        html += '.inspection-table tr:last-child td { border-bottom: none; }';
+        html += '.passed { color: #2e7d32; }';
+        html += '.failed { color: #c62828; }';
+        html += '.na { color: #999; }';
+
+        // Notes row inside inspection section
+        html += '.notes-row { background: #fffde7; padding: 7px 12px; font-size: 12px; border-top: 1px solid #e0e0e0; }';
+        html += '.notes-label { font-weight: bold; color: #555; margin-bottom: 2px; font-size: 12px; }';
+        html += '.notes-value { color: #333; font-size: 12px; }';
+        html += '.notes-empty { color: #999; font-style: italic; font-size: 12px; }';
+
+        // Images page
+        html += '.images-section { margin: 0 30px; border: 1px solid #e0e0e0; border-radius: 6px; overflow: hidden; }';
+        html += '.images-section-header { background: #f0f4f8; color: #003366; font-size: 12px; font-weight: bold; padding: 7px 12px; border-bottom: 1px solid #e0e0e0; }';
+        html += '.images-section-body { padding: 20px; text-align: center; }';
+        html += '.images-section-body img { max-width: 250px; height: auto; border-radius: 6px; border: 1px solid #eee; }';
+        html += '.no-image { color: #999; font-size: 12px; font-style: italic; }';
+
+        html += '</style></head><body>';
+
+        // ── PAGE 1 — Title Page ──
+        html += '<div class="header">';
+        html += '<h1>Elevator Inspection Report</h1>';
+        html += '<p>Generated on: ' + new GlideDateTime().getDisplayValue() + '</p>';
+        html += '</div>';
+
+        // Order Details
+        html += '<div class="section">';
+        html += '<h2>Order Details</h2>';
+        html += '<div class="two-col">';
+        html += '<div class="col">';
+        html += '<div class="field-row"><div class="field-label">Order Number</div><div class="field-value">' + orderGr.getDisplayValue('number') + '</div></div>';
+        html += '<div class="field-row"><div class="field-label">Inspector</div><div class="field-value">' + orderGr.getDisplayValue('assigned_to') + '</div></div>';
+        html += '</div>';
+        html += '<div class="col">';
+        html += '<div class="field-row"><div class="field-label">Company</div><div class="field-value">' + (orderGr.getDisplayValue('u_company') || '-') + '</div></div>';
+        html += '<div class="field-row"><div class="field-label">Customer</div><div class="field-value">' + (orderGr.getDisplayValue('customer_name') || '-') + '</div></div>';
+        html += '</div>';
+        html += '</div>';
+        html += '</div>';
+
+        // Total elevators
+        html += '<div class="section">';
+        html += '<h2>Inspection Summary</h2>';
+        html += '<div class="field-row"><div class="field-label">Total Elevators</div><div class="field-value">' + devices.length + '</div></div>';
+        html += '</div>';
+
+        // Failed items summary
+        html += '<div class="section">';
+        html += '<h2>Failed Items</h2>';
+        html += '<table class="summary-table">';
+        html += '<tr><th style="width:30%">Elevator</th><th>Failed Items</th></tr>';
+
+        for (var s = 0; s < devices.length; s++) {
+            var sd = devices[s];
+            html += '<tr>';
+            html += '<td><strong>Elevator ' + (s + 1) + '</strong><br/>SN: ' + sd.serial + '</td>';
+            html += '<td>';
+            if (sd.failedItems.length === 0) {
+                html += '<div class="no-issues">No issues found</div>';
+            } else {
+                for (var f = 0; f < sd.failedItems.length; f++) {
+                    html += '<div class="failed-item">' + sd.failedItems[f] + '</div>';
+                }
+            }
+            html += '</td>';
+            html += '</tr>';
+        }
+
+        html += '</table>';
+        html += '</div>';
+
+        // ── PER ELEVATOR — Inspection + Images ──
+        for (var i = 0; i < devices.length; i++) {
+            var d = devices[i];
+
+            // ── Elevator inspection page ──
+            html += '<div class="page-break"></div>';
+
+            html += '<div class="elevator-header">Elevator ' + (i + 1) + ' &nbsp;|&nbsp; Serial Number: ' + d.serial + '</div>';
+            html += '<div class="device-card-body">';
+
+            // Two column device info
+            html += '<div class="two-col" style="margin-bottom:18px;">';
+
+            // Left — Inspection Number + Date
+            html += '<div class="col">';
+            html += '<div class="field-row"><div class="field-label">Inspection Number</div><div class="field-value">' + d.number + '</div></div>';
+            html += '<div class="field-row"><div class="field-label">Date</div><div class="field-value">' + d.opened_at + '</div></div>';
+            html += '</div>';
+
+            // Right — Building, Manufacturer, Model
+            html += '<div class="col">';
+            html += '<div class="field-row"><div class="field-label">Building</div><div class="field-value">' + (d.building || '-') + '</div></div>';
+            html += '<div class="field-row"><div class="field-label">Manufacturer</div><div class="field-value">' + (d.manufacturer || '-') + '</div></div>';
+            html += '<div class="field-row"><div class="field-label">Model</div><div class="field-value">' + (d.device_model || '-') + '</div></div>';
+            html += '</div>';
+
+            html += '</div>'; // two-col
+
+            // 1. General Operation
+            html += '<div class="inspection-section">';
+            html += '<div class="inspection-section-header">1. General Operation</div>';
+            html += '<table class="inspection-table">';
+            html += this._row('Elevator starts and stops smoothly', d.elevator_starts_and_stops_smoothly);
+            html += this._row('No unusual noises or vibrations', d.no_unusual_noises_or_vibrations);
+            html += this._row('Doors open and close properly', d.doors_open_and_close_properly);
+            html += this._row('Floor leveling is accurate', d.floor_leveling_is_accurate);
+            html += '</table>';
+            html += '<div class="notes-row"><div class="notes-label">Notes</div>';
+            html += '<div class="' + (d.general_operation_notes ? 'notes-value' : 'notes-empty') + '">' + (d.general_operation_notes || 'No notes') + '</div></div>';
+            html += '</div>';
+
+            // 2. Safety Features
+            html += '<div class="inspection-section">';
+            html += '<div class="inspection-section-header">2. Safety Features</div>';
+            html += '<table class="inspection-table">';
+            html += this._row('Emergency stop button works', d.emergency_stop_button_works);
+            html += this._row('Alarm bell functions', d.alarm_bell_functions);
+            html += this._row('Emergency phone/intercom works', d.emergency_phone_works);
+            html += this._row('Overload warning system operational', d.overload_warning_system_operational);
+            html += '</table>';
+            html += '<div class="notes-row"><div class="notes-label">Notes</div>';
+            html += '<div class="' + (d.safety_features_notes ? 'notes-value' : 'notes-empty') + '">' + (d.safety_features_notes || 'No notes') + '</div></div>';
+            html += '</div>';
+
+            // 3. Doors & Entrances
+            html += '<div class="inspection-section">';
+            html += '<div class="inspection-section-header">3. Doors &amp; Entrances</div>';
+            html += '<table class="inspection-table">';
+            html += this._row('Door sensors (reopen function) working', d.door_sensors_reopen_function_working);
+            html += this._row('No door obstructions or damage', d.no_door_obstructions_or_damage);
+            html += this._row('Hall call buttons functioning', d.hall_call_buttons_functioning);
+            html += '</table>';
+            html += '<div class="notes-row"><div class="notes-label">Notes</div>';
+            html += '<div class="' + (d.doors_entrances_notes ? 'notes-value' : 'notes-empty') + '">' + (d.doors_entrances_notes || 'No notes') + '</div></div>';
+            html += '</div>';
+
+            // 4. Cab Interior
+            html += '<div class="inspection-section">';
+            html += '<div class="inspection-section-header">4. Cab Interior</div>';
+            html += '<table class="inspection-table">';
+            html += this._row('Lighting works properly', d.lighting_works_properly);
+            html += this._row('Ventilation fan operational', d.ventilation_fan_operational);
+            html += this._row('Handrails secure (if present)', d.handrails_secure_if_present);
+            html += this._row('Mirrors/panels not damaged', d.mirrors_panels_not_damaged);
+            html += '</table>';
+            html += '<div class="notes-row"><div class="notes-label">Notes</div>';
+            html += '<div class="' + (d.cab_interior_notes ? 'notes-value' : 'notes-empty') + '">' + (d.cab_interior_notes || 'No notes') + '</div></div>';
+            html += '</div>';
+
+            html += '</div>'; // device-card-body
+
+            // ── Images page ──
+            html += '<div class="page-break"></div>';
+
+            html += '<div class="elevator-header">Elevator ' + (i + 1) + ' &nbsp;|&nbsp; Serial Number: ' + d.serial + ' &nbsp;|&nbsp; Images</div>';
+            html += '<div class="device-card-body">';
+            html += '<div class="images-section-body">';
+            if (d.image) {
+                html += d.image;
+            } else {
+                html += '<div class="no-image">No image uploaded for this elevator</div>';
+            }
+            html += '</div>';
+            html += '</div>';
+        }
+
+        html += '</body></html>';
+
+        return html;
+    },
+
+    _row: function(label, value) {
+        var cssClass = value == 'Passed' ? 'passed' : value == 'Failed' ? 'failed' : 'na';
+        var display = value || 'N/A';
+        return '<tr><td>' + label + '</td><td class="' + cssClass + '">' + display + '</td></tr>';
+    },
+
+    type: 'OrderPDFGenerator'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 19:46:59</sys_created_on>
+        <sys_id>089246af938c83100cbd35befaba1009</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>OrderPDFGenerator</sys_name>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_update_name>sys_script_include_089246af938c83100cbd35befaba1009</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-11 00:54:51</sys_updated_on>
+    </sys_script_include>
+</record_update>

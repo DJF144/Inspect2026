@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sys_attachment</collection>
+        <condition>current.table_name == 'x_1909471_inspec_0_device'</condition>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Save Attachment to Parent</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+    // Get the child record
+    var child = new GlideRecord(current.table_name);
+    if (!child.get(current.table_sys_id)) {
+        return;
+    }
+
+    // Make sure parent exists
+    if (!child.parent) {
+        return;
+    }
+
+    // Copy attachment to parent
+    var attachment = new GlideSysAttachment();
+    attachment.copy(
+        current.table_name,   // child table
+        child.sys_id,         // child record
+        'x_1909471_inspec_0_order',  // parent table
+        child.parent          // parent sys_id
+    );
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-03 21:30:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bc38929d934847100cbd35befaba101a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Save Attachment to Parent</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_update_name>sys_script_bc38929d934847100cbd35befaba101a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 20:45:44</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=bc38929d934847100cbd35befaba101a"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</application>
+        <file_path/>
+        <instance_id>36a568f1eb15aa5ccbdefceacad0cd7b</instance_id>
+        <instance_name>dev341845</instance_name>
+        <name>sys_script_bc38929d934847100cbd35befaba101a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;false&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;sys_attachment&lt;/collection&gt;&lt;condition&gt;current.table_name == 'x_1909471_inspec_0_device'&lt;/condition&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Save Attachment to Parent&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+    // Get the child record
+    var child = new GlideRecord(current.table_name);
+    if (!child.get(current.table_sys_id)) {
+        return;
+    }
+
+    // Make sure parent exists
+    if (!child.parent) {
+        return;
+    }
+
+    // Copy attachment to parent
+    var attachment = new GlideSysAttachment();
+    attachment.copy(
+        current.table_name,   // child table
+        child.sys_id,         // child record
+        'x_1909471_inspec_0_order',  // parent table
+        child.parent          // parent sys_id
+    );
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-04-03 21:30:26&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;bc38929d934847100cbd35befaba101a&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Save Attachment to Parent&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Inspect 2026" source="x_1909471_inspec_0"&gt;2f3eba82935fba100cbd35befaba10fe&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Inspect 2026"&gt;2f3eba82935fba100cbd35befaba10fe&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_bc38929d934847100cbd35befaba101a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-04-10 20:45:44&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=bc38929d934847100cbd35befaba101a"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>802740926</payload_hash>
+        <record_name>Save Attachment to Parent</record_name>
+        <reverted_from/>
+        <source>32f6be9a935732100cbd35befaba1083</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 20:45:44</sys_created_on>
+        <sys_id>75419eaf9300c3100cbd35befaba1054</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d7924c0770000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 20:45:44</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>7d419eaf4500c31036ad2cd9f7888852</update_guid>
+        <update_guid_history>7d419eaf4500c31036ad2cd9f7888852:802740926,0ea852dd21484710f41d2c7e953fd018:2035715311,c468d69da5484710a5386eed0c7ac3fa:-1307114800</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 23:50:06</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>9bf019744cbf48e9845d927754e4f789</sys_id>
+        <sys_metadata>bc38929d934847100cbd35befaba101a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Save Attachment to Parent</sys_name>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_parent display_value="Sys Attachment">507b0411791232108bb291bde809c95f</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_scope_delete display_value="">446d1859cdca4f34a7ecc80b8969d661</sys_scope_delete>
+        <sys_update_name>sys_script_bc38929d934847100cbd35befaba101a</sys_update_name>
+        <sys_update_version display_value="sys_script_bc38929d934847100cbd35befaba101a">75419eaf9300c3100cbd35befaba1054</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 23:50:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

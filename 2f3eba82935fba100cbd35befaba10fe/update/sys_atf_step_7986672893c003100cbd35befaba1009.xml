@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <callable_outputs/>
+        <copied_from/>
+        <description>Set the following values on the form in 'Inspect 2026':
+Screen Condition = Very Good
+and Dead Pixels = None
+and Front Camera = Passed
+and Earpiece Speakers = Passed
+and Bottom Speaker = Passed
+and Rear Photo = Passed
+and IMEI / Serial No. = 1234567
+and Touch Responsiveness = Passed
+and Microphones = Passed
+and SIM Tray = Passed
+and USB-C Port = Passed
+and Rear Photo Quality = Passed
+and Charging Port = Passed
+and Frame  = Very Good
+and Front Photo Quality = Passed
+and Charging = Passed
+and Buttons (Side/Volume) = Passed
+and Battery Health = 99
+and Back Glass / Cover = Very Good</description>
+        <display_name>Set Field Values</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>4</order>
+        <step_config display_value="Set Field Values">fcae4a935332120028bc29cac2dc340e</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-01 19:20:22</sys_created_on>
+        <sys_id>7986672893c003100cbd35befaba1009</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Set Field Values</sys_name>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_update_name>sys_atf_step_7986672893c003100cbd35befaba1009</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-02 00:50:58</sys_updated_on>
+        <table>x_1909471_inspec_0_device</table>
+        <test display_value="New Device Inspect">dde83580934403100cbd35befaba10a1</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=7986672893c003100cbd35befaba1009"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>7986672893c003100cbd35befaba1009</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-01 19:20:22</sys_created_on>
+        <sys_id>576723a893c003100cbd35befaba10f7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-02 00:23:25</sys_updated_on>
+        <value>a58ae0c02f277e10265d24d5c7c6be98</value>
+        <variable display_value="Form UI">946f3c1a0f23330072e6452bc4767eda</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>7986672893c003100cbd35befaba1009</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-01 19:20:22</sys_created_on>
+        <sys_id>9b6723a893c003100cbd35befaba10f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-01 19:20:22</sys_updated_on>
+        <value>x_1909471_inspec_0_device</value>
+        <variable display_value="Table">424ca6465320220002c6435723dc34b5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>7986672893c003100cbd35befaba1009</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-01 19:20:22</sys_created_on>
+        <sys_id>df6723a893c003100cbd35befaba10f7</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-01 23:45:27</sys_updated_on>
+        <value>screen_condition=Very Good^dead_pixels=Yes^front_camera=Passed^earpiece_speakers=Passed^bottom_speaker=Passed^rear_video=Passed^device_serial_number=1234567^touch_responsiveness=Passed^microphones=Passed^sim_tray=Passed^usb_c_port=Passed^rear_photo_quality=Passed^charging_port=Passed^frame=Very Good^front_photo_quality=Passed^charging=Passed^buttons_side_volume=Passed^battery_health=99^back_glass_cover=Very Good^EQ</value>
+        <variable display_value="Field values">b3dba2465320220002c6435723dc34f0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_fcae4a935332120028bc29cac2dc340e^id=7986672893c003100cbd35befaba1009"/>
+</record_update>
