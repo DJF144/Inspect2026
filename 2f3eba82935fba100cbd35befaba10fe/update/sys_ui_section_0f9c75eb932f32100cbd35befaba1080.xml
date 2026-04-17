@@ -4,13 +4,13 @@
             <element>emergency_stop_button_works</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 21:40:26</sys_created_on>
-            <sys_id>36cdde2f9380c3100cbd35befaba1085</sys_id>
+            <sys_created_on>2026-04-15 01:11:51</sys_created_on>
+            <sys_id>b684f3b093d0c3100cbd35befaba10d1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Safety Features" display_value="Safety Features" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">0f9c75eb932f32100cbd35befaba1080</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 21:40:26</sys_updated_on>
+            <sys_updated_on>2026-04-15 01:11:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,69 +18,83 @@
             <element>emergency_phone_works</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 21:40:26</sys_created_on>
-            <sys_id>b2cdde2f9380c3100cbd35befaba1086</sys_id>
+            <sys_created_on>2026-04-15 01:11:51</sys_created_on>
+            <sys_id>3684f3b093d0c3100cbd35befaba10d2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Safety Features" display_value="Safety Features" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">0f9c75eb932f32100cbd35befaba1080</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 21:40:26</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>safety_features_notes</element>
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 21:40:26</sys_created_on>
-            <sys_id>32cdde2f9380c3100cbd35befaba1087</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Safety Features" display_value="Safety Features" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">0f9c75eb932f32100cbd35befaba1080</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 21:40:26</sys_updated_on>
+            <sys_updated_on>2026-04-15 01:11:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>3</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 21:40:26</sys_created_on>
-            <sys_id>becdde2f9380c3100cbd35befaba1087</sys_id>
+            <sys_created_on>2026-04-15 01:11:51</sys_created_on>
+            <sys_id>b284f3b093d0c3100cbd35befaba10d3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Safety Features" display_value="Safety Features" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">0f9c75eb932f32100cbd35befaba1080</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 21:40:26</sys_updated_on>
+            <sys_updated_on>2026-04-15 01:11:51</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>alarm_bell_functions</element>
-            <position>4</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 21:40:26</sys_created_on>
-            <sys_id>3ecdde2f9380c3100cbd35befaba1088</sys_id>
+            <sys_created_on>2026-04-15 01:11:51</sys_created_on>
+            <sys_id>3284f3b093d0c3100cbd35befaba10d4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Safety Features" display_value="Safety Features" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">0f9c75eb932f32100cbd35befaba1080</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 21:40:26</sys_updated_on>
+            <sys_updated_on>2026-04-15 01:11:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>overload_warning_system_operational</element>
-            <position>5</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 21:40:26</sys_created_on>
-            <sys_id>bacdde2f9380c3100cbd35befaba1089</sys_id>
+            <sys_created_on>2026-04-15 01:11:51</sys_created_on>
+            <sys_id>be84f3b093d0c3100cbd35befaba10d4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Safety Features" display_value="Safety Features" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">0f9c75eb932f32100cbd35befaba1080</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 21:40:26</sys_updated_on>
+            <sys_updated_on>2026-04-15 01:11:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-15 01:11:51</sys_created_on>
+            <sys_id>3e84f3b093d0c3100cbd35befaba10d5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Safety Features" display_value="Safety Features" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">0f9c75eb932f32100cbd35befaba1080</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-15 01:11:51</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>safety_features_notes</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-15 01:11:51</sys_created_on>
+            <sys_id>ba84f3b093d0c3100cbd35befaba10d6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Safety Features" display_value="Safety Features" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">0f9c75eb932f32100cbd35befaba1080</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-15 01:11:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

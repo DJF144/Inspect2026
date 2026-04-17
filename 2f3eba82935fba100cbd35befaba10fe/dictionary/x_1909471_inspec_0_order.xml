@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="abae5e5a939332100cbd35befaba1054" extends="task" label="Order" max_length="40" name="x_1909471_inspec_0_order" text_index="true" type="collection">
-        <element choice="1" label="Item Type" max_length="40" name="item_type" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Laptop" sequence="2" value="Laptop"/>
-                <element inactive_on_update="false" label="Tablet" sequence="1" value="Tablet"/>
-                <element inactive_on_update="false" label="Mobile Phone" sequence="0" value="Mobile Phone"/>
-            </choice>
-        </element>
         <element label="Customer Name" max_length="40" name="customer_name" type="string"/>
     </element>
 </database>

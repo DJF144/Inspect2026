@@ -16,36 +16,41 @@ OrderPDFGenerator.prototype = {
 
     generate: function(orderSysId) {
 
-        var orderGr = new GlideRecord('x_1909471_inspec_0_order');
+        let orderGr = new GlideRecord('x_1909471_inspec_0_order');
         if (!orderGr.get(orderSysId)) {
             gs.info('Order record not found');
             return;
         }
 
-        var devices = [];
-        var deviceGr = new GlideRecord('x_1909471_inspec_0_device');
+        let devices = [];
+        let deviceGr = new GlideRecord('x_1909471_inspec_0_device');
         deviceGr.addQuery('parent', orderSysId);
         deviceGr.query();
 
         while (deviceGr.next()) {
 
-            var imageHtml = '';
-            var attGr = new GlideRecord('sys_attachment');
+            let imageHtml = '';
+            let imageCount = 0;
+            let attGr = new GlideRecord('sys_attachment');
             attGr.addQuery('table_name', 'x_1909471_inspec_0_device');
             attGr.addQuery('table_sys_id', deviceGr.sys_id.toString());
             attGr.addQuery('content_type', 'STARTSWITH', 'image/');
             attGr.orderByDesc('sys_created_on');
-            attGr.setLimit(1);
+            attGr.setLimit(10);
             attGr.query();
 
-            if (attGr.next()) {
-                var ab = new GlideSysAttachment();
-                var base64 = ab.getContentBase64(attGr);
-                var contentType = attGr.content_type.toString();
-                imageHtml = '<img src="data:' + contentType + ';base64,' + base64 + '" style="max-width:250px; height:auto; border-radius:6px; border:1px solid #eee;" />';
+            while (attGr.next() && imageCount < 10) {
+                let ab = new GlideSysAttachment();
+                let base64 = ab.getContentBase64(attGr);
+                let contentType = attGr.content_type.toString();
+                imageHtml += '<div style="display:inline-block; margin:10px; vertical-align:top;">';
+                imageHtml += '<img src="data:' + contentType + ';base64,' + base64 + '" style="max-width:200px; height:auto; border-radius:6px; border:1px solid #eee;" />';
+                imageHtml += '<div style="font-size:11px; color:#999; text-align:center; margin-top:5px;">' + attGr.getDisplayValue('file_name') + '</div>';
+                imageHtml += '</div>';
+                imageCount++;
             }
 
-            var inspectionFields = [
+            let inspectionFields = [
                 { label: 'Elevator starts and stops smoothly', value: deviceGr.getDisplayValue('elevator_starts_and_stops_smoothly') },
                 { label: 'No unusual noises or vibrations', value: deviceGr.getDisplayValue('no_unusual_noises_or_vibrations') },
                 { label: 'Doors open and close properly', value: deviceGr.getDisplayValue('doors_open_and_close_properly') },
@@ -63,8 +68,8 @@ OrderPDFGenerator.prototype = {
                 { label: 'Mirrors/panels not damaged', value: deviceGr.getDisplayValue('mirrors_panels_not_damaged') }
             ];
 
-            var failedItems = [];
-            for (var f = 0; f < inspectionFields.length; f++) {
+            let failedItems = [];
+            for (let f = 0; f < inspectionFields.length; f++) {
                 if (inspectionFields[f].value == 'Failed') {
                     failedItems.push(inspectionFields[f].label);
                 }
@@ -101,11 +106,11 @@ OrderPDFGenerator.prototype = {
             });
         }
 
-        var html = this._buildHTML(orderGr, devices);
+        let html = this._buildHTML(orderGr, devices);
 
         try {
-            var pdfGen = new sn_pdfgeneratorutils.PDFGenerationAPI();
-            var result = pdfGen.convertToPDF(
+            let pdfGen = new sn_pdfgeneratorutils.PDFGenerationAPI();
+            let result = pdfGen.convertToPDF(
                 html,
                 'x_1909471_inspec_0_order',
                 orderSysId,
@@ -119,7 +124,7 @@ OrderPDFGenerator.prototype = {
 
     _buildHTML: function(orderGr, devices) {
 
-        var html = '<!DOCTYPE html>';
+        let html = '<!DOCTYPE html>';
         html += '<html><head><style>';
         html += '* { box-sizing: border-box; margin: 0; padding: 0; }';
         html += 'body { font-family: Arial, sans-serif; color: #333; background: #fff; }';
@@ -152,8 +157,8 @@ OrderPDFGenerator.prototype = {
         html += '.summary-table th { background: #f0f4f8; color: #003366; font-size: 12px; padding: 8px 12px; text-align: left; border: 1px solid #ddd; }';
         html += '.summary-table td { font-size: 12px; padding: 8px 12px; border: 1px solid #ddd; vertical-align: top; }';
         html += '.summary-table tr:nth-child(even) { background: #f9f9f9; }';
-        html += '.failed-item { color: #c62828; font-size: 12px; margin-bottom: 3px; }';
-        html += '.failed-item:before { content: "— "; }';
+        html += '.finding-item { color: #c62828; font-size: 12px; margin-bottom: 3px; }';
+        html += '.finding-item:before { content: "— "; }';
         html += '.no-issues { color: #2e7d32; font-size: 12px; font-style: italic; }';
 
         // Elevator header
@@ -175,18 +180,15 @@ OrderPDFGenerator.prototype = {
         html += '.failed { color: #c62828; }';
         html += '.na { color: #999; }';
 
-        // Notes row inside inspection section
+        // Notes
         html += '.notes-row { background: #fffde7; padding: 7px 12px; font-size: 12px; border-top: 1px solid #e0e0e0; }';
         html += '.notes-label { font-weight: bold; color: #555; margin-bottom: 2px; font-size: 12px; }';
         html += '.notes-value { color: #333; font-size: 12px; }';
         html += '.notes-empty { color: #999; font-style: italic; font-size: 12px; }';
 
-        // Images page
-        html += '.images-section { margin: 0 30px; border: 1px solid #e0e0e0; border-radius: 6px; overflow: hidden; }';
-        html += '.images-section-header { background: #f0f4f8; color: #003366; font-size: 12px; font-weight: bold; padding: 7px 12px; border-bottom: 1px solid #e0e0e0; }';
-        html += '.images-section-body { padding: 20px; text-align: center; }';
-        html += '.images-section-body img { max-width: 250px; height: auto; border-radius: 6px; border: 1px solid #eee; }';
-        html += '.no-image { color: #999; font-size: 12px; font-style: italic; }';
+        // Images
+        html += '.images-wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; padding: 15px; }';
+        html += '.no-image { color: #999; font-size: 12px; font-style: italic; padding: 20px; text-align: center; }';
 
         html += '</style></head><body>';
 
@@ -211,28 +213,27 @@ OrderPDFGenerator.prototype = {
         html += '</div>';
         html += '</div>';
 
-        // Total elevators
+        // Inspection Summary
         html += '<div class="section">';
         html += '<h2>Inspection Summary</h2>';
         html += '<div class="field-row"><div class="field-label">Total Elevators</div><div class="field-value">' + devices.length + '</div></div>';
         html += '</div>';
 
-        // Failed items summary
+        // Findings Summary
         html += '<div class="section">';
-        html += '<h2>Failed Items</h2>';
         html += '<table class="summary-table">';
-        html += '<tr><th style="width:30%">Elevator</th><th>Failed Items</th></tr>';
+        html += '<tr><th style="width:30%">Elevator</th><th>Findings</th></tr>';
 
-        for (var s = 0; s < devices.length; s++) {
-            var sd = devices[s];
+        for (let s = 0; s < devices.length; s++) {
+            let sd = devices[s];
             html += '<tr>';
             html += '<td><strong>Elevator ' + (s + 1) + '</strong><br/>SN: ' + sd.serial + '</td>';
             html += '<td>';
             if (sd.failedItems.length === 0) {
                 html += '<div class="no-issues">No issues found</div>';
             } else {
-                for (var f = 0; f < sd.failedItems.length; f++) {
-                    html += '<div class="failed-item">' + sd.failedItems[f] + '</div>';
+                for (let f = 0; f < sd.failedItems.length; f++) {
+                    html += '<div class="finding-item">' + sd.failedItems[f] + '</div>';
                 }
             }
             html += '</td>';
@@ -242,9 +243,9 @@ OrderPDFGenerator.prototype = {
         html += '</table>';
         html += '</div>';
 
-        // ── PER ELEVATOR — Inspection + Images ──
-        for (var i = 0; i < devices.length; i++) {
-            var d = devices[i];
+        // ── PER ELEVATOR ──
+        for (let i = 0; i < devices.length; i++) {
+            let d = devices[i];
 
             // ── Elevator inspection page ──
             html += '<div class="page-break"></div>';
@@ -254,21 +255,16 @@ OrderPDFGenerator.prototype = {
 
             // Two column device info
             html += '<div class="two-col" style="margin-bottom:18px;">';
-
-            // Left — Inspection Number + Date
             html += '<div class="col">';
             html += '<div class="field-row"><div class="field-label">Inspection Number</div><div class="field-value">' + d.number + '</div></div>';
             html += '<div class="field-row"><div class="field-label">Date</div><div class="field-value">' + d.opened_at + '</div></div>';
             html += '</div>';
-
-            // Right — Building, Manufacturer, Model
             html += '<div class="col">';
             html += '<div class="field-row"><div class="field-label">Building</div><div class="field-value">' + (d.building || '-') + '</div></div>';
             html += '<div class="field-row"><div class="field-label">Manufacturer</div><div class="field-value">' + (d.manufacturer || '-') + '</div></div>';
             html += '<div class="field-row"><div class="field-label">Model</div><div class="field-value">' + (d.device_model || '-') + '</div></div>';
             html += '</div>';
-
-            html += '</div>'; // two-col
+            html += '</div>';
 
             // 1. General Operation
             html += '<div class="inspection-section">';
@@ -328,13 +324,13 @@ OrderPDFGenerator.prototype = {
 
             html += '<div class="elevator-header">Elevator ' + (i + 1) + ' &nbsp;|&nbsp; Serial Number: ' + d.serial + ' &nbsp;|&nbsp; Images</div>';
             html += '<div class="device-card-body">';
-            html += '<div class="images-section-body">';
+
             if (d.image) {
-                html += d.image;
+                html += '<div class="images-wrap">' + d.image + '</div>';
             } else {
-                html += '<div class="no-image">No image uploaded for this elevator</div>';
+                html += '<div class="no-image">No images uploaded for this elevator</div>';
             }
-            html += '</div>';
+
             html += '</div>';
         }
 
@@ -344,8 +340,8 @@ OrderPDFGenerator.prototype = {
     },
 
     _row: function(label, value) {
-        var cssClass = value == 'Passed' ? 'passed' : value == 'Failed' ? 'failed' : 'na';
-        var display = value || 'N/A';
+        let cssClass = value == 'Passed' ? 'passed' : value == 'Failed' ? 'failed' : 'na';
+        let display = value || 'N/A';
         return '<tr><td>' + label + '</td><td class="' + cssClass + '">' + display + '</td></tr>';
     },
 
@@ -355,13 +351,13 @@ OrderPDFGenerator.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-10 19:46:59</sys_created_on>
         <sys_id>089246af938c83100cbd35befaba1009</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>OrderPDFGenerator</sys_name>
         <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
         <sys_update_name>sys_script_include_089246af938c83100cbd35befaba1009</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-11 00:54:51</sys_updated_on>
+        <sys_updated_on>2026-04-15 21:08:11</sys_updated_on>
     </sys_script_include>
 </record_update>

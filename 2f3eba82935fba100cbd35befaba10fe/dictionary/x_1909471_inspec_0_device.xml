@@ -7,16 +7,8 @@
                 <element inactive_on_update="false" label="N/A" sequence="2" value="N/A"/>
             </choice>
         </element>
-        <element label="Head Phone Port" max_length="255" name="head_phone_port" type="boolean"/>
         <element label="Doors &amp; Entrances Notes" max_length="4000" name="camera_speaker_notes" type="string"/>
         <element label="General Operation Notes" max_length="4000" name="physical_condition_notes" type="string"/>
-        <element label="Bottom Speaker" max_length="40" name="bottom_speaker" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Failed" sequence="1" value="Failed"/>
-                <element inactive_on_update="false" label="None" sequence="2" value="None"/>
-                <element inactive_on_update="false" label="Passed" sequence="0" value="Passed"/>
-            </choice>
-        </element>
         <element choice="1" default="Passed" label="Lighting works properly" mandatory="true" max_length="40" name="lighting_works_properly" type="choice">
             <choice>
                 <element inactive_on_update="false" label="N/A" sequence="2" value="N/A"/>
@@ -32,30 +24,8 @@
                 <element inactive_on_update="false" label="N/A" sequence="2" value="N/A"/>
             </choice>
         </element>
-        <element label="Safety Features Notes" max_length="40" name="safety_features_notes" type="string"/>
+        <element label="Safety Features Notes" max_length="4000" name="safety_features_notes" type="string"/>
         <element label="General Operation Notes" max_length="4000" name="general_operation_notes" type="string"/>
-        <element label="Model" max_length="40" name="model" type="string"/>
-        <element label="Screen Condition" max_length="40" name="button_1" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="bad" sequence="3" value="bad"/>
-                <element inactive_on_update="false" label="very good" sequence="0" value="None"/>
-                <element inactive_on_update="false" label="good" sequence="1" value="Small"/>
-                <element inactive_on_update="false" label="okay" sequence="2" value="Medium"/>
-                <element inactive_on_update="false" label="very bad" sequence="4" value="very bad"/>
-            </choice>
-        </element>
-        <element choice="1" label="Touch Responsiveness" mandatory="true" max_length="40" name="touch_responsiveness" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Passed" sequence="0" value="Passed"/>
-                <element inactive_on_update="false" label="Failed" sequence="1" value="Failed"/>
-            </choice>
-        </element>
-        <element label="Paint Peeling on the casing" max_length="255" name="new_field_3" type="boolean"/>
-        <element label="Upload Document" max_length="255" name="upload_document" type="file_attachment"/>
-        <element label="Upload Picture" max_length="255" name="upload_picture" type="user_image"/>
-        <element label="Battery Charging Notes" max_length="40" name="battery_charging_note0" type="string"/>
-        <element label="Head Phone Port" max_length="255" name="head_phone_por0" type="boolean"/>
-        <element label="Camera" max_length="255" name="camera" type="boolean"/>
         <element choice="1" default="Passed" label="Emergency stop button works" mandatory="true" max_length="40" name="emergency_stop_button_works" type="choice">
             <choice>
                 <element inactive_on_update="false" label="N/A" sequence="2" value="N/A"/>
@@ -63,7 +33,6 @@
                 <element inactive_on_update="false" label="Failed" sequence="1" value="Failed"/>
             </choice>
         </element>
-        <element label="Charing Port" max_length="40" name="charing_port" type="boolean"/>
         <element choice="1" default="Passed" label="No door obstructions or damage" mandatory="true" max_length="40" name="no_door_obstructions_or_damage" type="string">
             <choice>
                 <element inactive_on_update="false" label="N/A" sequence="2" value="N/A"/>
@@ -78,13 +47,6 @@
                 <element inactive_on_update="false" label="Failed" sequence="1" value="Failed"/>
             </choice>
         </element>
-        <element label="Dents" max_length="255" name="dents" type="boolean"/>
-        <element choice="1" label="Earpiece Speakers" mandatory="true" max_length="40" name="earpiece_speakers" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Passed" sequence="0" value="Passed"/>
-                <element inactive_on_update="false" label="Failed" sequence="1" value="Failed"/>
-            </choice>
-        </element>
         <element choice="1" default="Passed" label="Mirrors/panels not damaged" mandatory="true" max_length="40" name="mirrors_panels_not_damaged" type="string">
             <choice>
                 <element inactive_on_update="false" label="N/A" sequence="2" value="N/A"/>
@@ -93,26 +55,7 @@
             </choice>
         </element>
         <element label="Building" max_length="40" name="building" type="string"/>
-        <element label="Doors &amp; Entrances Notes" max_length="40" name="doors_entrances_notes" type="string"/>
-        <element choice="1" label="Rear Photo Quality" mandatory="true" max_length="40" name="rear_photo_quality" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Passed" sequence="0" value="Passed"/>
-                <element inactive_on_update="false" label="Failed" sequence="1" value="Failed"/>
-            </choice>
-        </element>
-        <element choice="1" label="Rear Photo" mandatory="true" max_length="40" name="rear_video" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Passed" sequence="0" value="Passed"/>
-                <element inactive_on_update="false" label="Failed" sequence="1" value="Failed"/>
-            </choice>
-        </element>
-        <element choice="1" label="Dead Pixels" mandatory="true" max_length="40" name="dead_pixels" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Major" sequence="2" value="Major"/>
-                <element inactive_on_update="false" label="None" sequence="0" value="Yes"/>
-                <element inactive_on_update="false" label="Minor" sequence="1" value="Minor"/>
-            </choice>
-        </element>
+        <element label="Doors &amp; Entrances Notes" max_length="4000" name="doors_entrances_notes" type="string"/>
         <element choice="1" default="Passed" label="Elevator starts and stops smoothly" mandatory="true" max_length="40" name="elevator_starts_and_stops_smoothly" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Failed" sequence="1" value="Failed"/>
@@ -120,33 +63,6 @@
                 <element inactive_on_update="false" label="Not Applicable" sequence="2" value="Not Applicable"/>
             </choice>
         </element>
-        <element choice="1" label="Front Camera" mandatory="true" max_length="40" name="front_camera" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Passed" sequence="0" value="Passed"/>
-                <element inactive_on_update="false" label="Failed" sequence="1" value="Failed"/>
-            </choice>
-        </element>
-        <element label="Storage" max_length="255" name="storage" type="integer"/>
-        <element label="Front Camera Glass" max_length="40" name="front_camera_glass" type="string"/>
-        <element label="New Field 2" max_length="255" name="new_field_2" type="boolean"/>
-        <element label="New Field 1" max_length="255" name="new_field_1" type="boolean"/>
-        <element choice="1" label="Front Photo Quality" mandatory="true" max_length="40" name="front_photo_quality" type="string">
-            <choice>
-                <element inactive_on_update="false" label="Passed" sequence="0" value="Passed"/>
-                <element inactive_on_update="false" label="Failed" sequence="1" value="Failed"/>
-            </choice>
-        </element>
-        <element choice="1" label="Back Glass / Cover" mandatory="true" max_length="40" name="back_glass_cover" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Okay" sequence="2" value="Okay"/>
-                <element inactive_on_update="false" label="Bad" sequence="3" value="Bad"/>
-                <element inactive_on_update="false" label="Very Good" sequence="0" value="Very Good"/>
-                <element inactive_on_update="false" label="Good" sequence="1" value="Good"/>
-                <element inactive_on_update="false" label="Very Bad" sequence="4" value="Very Bad"/>
-            </choice>
-        </element>
-        <element label="url_list_pictures" max_length="40" name="pictures_added" type="html"/>
-        <element label="Headphone Port " max_length="255" name="headphone_port" type="boolean"/>
         <element choice="1" default="Passed" label="Emergency phone works" mandatory="true" max_length="40" name="emergency_phone_works" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Passed" sequence="0" value="Passed"/>
@@ -176,59 +92,12 @@
                 <element inactive_on_update="false" label="N/A" sequence="2" value="N/A"/>
             </choice>
         </element>
-        <element choice="1" label="Rear Camera Glass" mandatory="true" max_length="40" name="rear_camera_glass" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Passed" sequence="0" value="Passed"/>
-                <element inactive_on_update="false" label="Failed" sequence="1" value="Failed"/>
-            </choice>
-        </element>
-        <element choice="1" label="Bottom Speaker" mandatory="true" max_length="40" name="bottom_speake0" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Passed" sequence="0" value="Passed"/>
-                <element inactive_on_update="false" label="Failed" sequence="1" value="Failed"/>
-            </choice>
-        </element>
-        <element choice="1" label="USB-C Port" mandatory="true" max_length="40" name="usb_c_port" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Passed" sequence="0" value="Passed"/>
-                <element inactive_on_update="false" label="Failed" sequence="1" value="Failed"/>
-            </choice>
-        </element>
         <element label="Model" max_length="40" name="device_model" type="string"/>
-        <element label="Battery Charging Notes" max_length="4000" name="battery_charging_notes" type="string"/>
-        <element label="Color" max_length="40" name="color" type="string"/>
-        <element choice="1" label="Screen Condition" mandatory="true" max_length="40" name="screen_condition" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Very Bad" sequence="4" value="Very Bad"/>
-                <element inactive_on_update="false" label="Okay" sequence="2" value="Okay"/>
-                <element inactive_on_update="false" label="Bad" sequence="3" value="Bad"/>
-                <element inactive_on_update="false" label="Good" sequence="1" value="Good"/>
-                <element inactive_on_update="false" label="Very Good" sequence="0" value="Very Good"/>
-            </choice>
-        </element>
-        <element choice="1" label="Buttons (Side/Volume)" mandatory="true" max_length="40" name="buttons_side_volume" type="string">
-            <choice>
-                <element inactive_on_update="false" label="Passed" sequence="0" value="Passed"/>
-                <element inactive_on_update="false" label="Failed" sequence="1" value="Failed"/>
-            </choice>
-        </element>
-        <element choice="1" label="Charging Port" mandatory="true" max_length="40" name="charging_port" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Passed" sequence="0" value="Passed"/>
-                <element inactive_on_update="false" label="Failed" sequence="1" value="Failed"/>
-            </choice>
-        </element>
         <element choice="1" default="Passed" label="Hall call buttons functioning" mandatory="true" max_length="40" name="hall_call_buttons_functioning" type="string">
             <choice>
                 <element inactive_on_update="false" label="Passed" sequence="0" value="Passed"/>
                 <element inactive_on_update="false" label="Failed" sequence="1" value="Failed"/>
                 <element inactive_on_update="false" label="N/A" sequence="2" value="N/A"/>
-            </choice>
-        </element>
-        <element choice="1" label="Microphones" mandatory="true" max_length="40" name="microphones" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Failed" sequence="1" value="Failed"/>
-                <element inactive_on_update="false" label="Passed" sequence="0" value="Passed"/>
             </choice>
         </element>
         <element choice="1" default="Passed" label="Ventilation fan operational" mandatory="true" max_length="40" name="ventilation_fan_operational" type="choice">
@@ -246,28 +115,5 @@
             </choice>
         </element>
         <element label="Elevator Serial Number" mandatory="true" max_length="40" name="device_serial_number" type="string"/>
-        <element label="Headphone Port" max_length="255" name="headphone_por0" type="radio"/>
-        <element choice="1" label="Frame " mandatory="true" max_length="40" name="frame" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Very Bad" sequence="4" value="Very Bad"/>
-                <element inactive_on_update="false" label="Okay" sequence="2" value="Okay"/>
-                <element inactive_on_update="false" label="Very Good" sequence="0" value="Very Good"/>
-                <element inactive_on_update="false" label="Bad" sequence="3" value="Bad"/>
-                <element inactive_on_update="false" label="Good" sequence="1" value="Good"/>
-            </choice>
-        </element>
-        <element label="Battery Health" mandatory="true" max_length="255" name="battery_health" type="integer"/>
-        <element choice="1" label="SIM Tray" mandatory="true" max_length="40" name="sim_tray" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Passed" sequence="0" value="Passed"/>
-                <element inactive_on_update="false" label="Failed" sequence="1" value="Failed"/>
-            </choice>
-        </element>
-        <element choice="1" label="Charging" mandatory="true" max_length="40" name="charging" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Failed" sequence="1" value="Failed"/>
-                <element inactive_on_update="false" label="Passed" sequence="0" value="Passed"/>
-            </choice>
-        </element>
     </element>
 </database>
