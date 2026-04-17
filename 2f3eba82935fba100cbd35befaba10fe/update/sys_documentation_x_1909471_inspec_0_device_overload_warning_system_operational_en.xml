@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="overload_warning_system_operational" label="Overload warning system operational" language="en" table="x_1909471_inspec_0_device">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>overload_warning_system_operational</element>
+            <help/>
+            <hint/>
+            <label>Overload warning system operational</label>
+            <language>en</language>
+            <name>x_1909471_inspec_0_device</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-10 21:26:35</sys_created_on>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_name>Overload warning system operational</sys_name>
+            <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+            <sys_update_name>sys_documentation_x_1909471_inspec_0_device_overload_warning_system_operational_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-10 21:51:10</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

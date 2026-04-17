@@ -1,133 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_ui_section caption="Cameras &amp; Speakers" section_id="0ae8b9ac937732100cbd35befaba104f" sys_domain="global" table="x_1909471_inspec_0_device" version="3" view="">
+    <sys_ui_section caption="Doors &amp; Entrances" section_id="0ae8b9ac937732100cbd35befaba104f" sys_domain="global" table="x_1909471_inspec_0_device" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>front_camera</element>
+            <element>hall_call_buttons_functioning</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-20 19:54:51</sys_created_on>
-            <sys_id>5f3c31f093b7b2100cbd35befaba10be</sys_id>
+            <sys_created_on>2026-04-15 01:11:51</sys_created_on>
+            <sys_id>7e84f3b093d0c3100cbd35befaba10f9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Cameras &amp; Speakers" display_value="Cameras &amp; Speakers" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">0ae8b9ac937732100cbd35befaba104f</sys_ui_section>
+            <sys_ui_section caption="Doors &amp; Entrances" display_value="Doors &amp; Entrances" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">0ae8b9ac937732100cbd35befaba104f</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-20 19:54:51</sys_updated_on>
+            <sys_updated_on>2026-04-15 01:11:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>front_photo_quality</element>
+            <element>no_door_obstructions_or_damage</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-20 19:54:51</sys_created_on>
-            <sys_id>db3c31f093b7b2100cbd35befaba10bf</sys_id>
+            <sys_created_on>2026-04-15 01:11:51</sys_created_on>
+            <sys_id>fa84f3b093d0c3100cbd35befaba10fa</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Cameras &amp; Speakers" display_value="Cameras &amp; Speakers" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">0ae8b9ac937732100cbd35befaba104f</sys_ui_section>
+            <sys_ui_section caption="Doors &amp; Entrances" display_value="Doors &amp; Entrances" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">0ae8b9ac937732100cbd35befaba104f</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-20 19:54:51</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>earpiece_speakers</element>
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-20 19:54:51</sys_created_on>
-            <sys_id>5b3c31f093b7b2100cbd35befaba10c0</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Cameras &amp; Speakers" display_value="Cameras &amp; Speakers" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">0ae8b9ac937732100cbd35befaba104f</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-20 19:54:51</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>bottom_speaker</element>
-            <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-20 19:54:51</sys_created_on>
-            <sys_id>d73c31f093b7b2100cbd35befaba10c1</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Cameras &amp; Speakers" display_value="Cameras &amp; Speakers" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">0ae8b9ac937732100cbd35befaba104f</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-20 19:54:51</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>camera_speaker_notes</element>
-            <position>4</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-20 19:54:51</sys_created_on>
-            <sys_id>573c31f093b7b2100cbd35befaba10c2</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Cameras &amp; Speakers" display_value="Cameras &amp; Speakers" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">0ae8b9ac937732100cbd35befaba104f</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-20 19:54:51</sys_updated_on>
+            <sys_updated_on>2026-04-15 01:11:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>5</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-20 19:54:51</sys_created_on>
-            <sys_id>d33c31f093b7b2100cbd35befaba10c3</sys_id>
+            <sys_created_on>2026-04-15 01:11:51</sys_created_on>
+            <sys_id>7a84f3b093d0c3100cbd35befaba10fb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Cameras &amp; Speakers" display_value="Cameras &amp; Speakers" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">0ae8b9ac937732100cbd35befaba104f</sys_ui_section>
+            <sys_ui_section caption="Doors &amp; Entrances" display_value="Doors &amp; Entrances" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">0ae8b9ac937732100cbd35befaba104f</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-20 19:54:51</sys_updated_on>
+            <sys_updated_on>2026-04-15 01:11:51</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>rear_video</element>
-            <position>6</position>
+            <element>door_sensors_reopen_function_working</element>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-20 19:54:51</sys_created_on>
-            <sys_id>533c31f093b7b2100cbd35befaba10c4</sys_id>
+            <sys_created_on>2026-04-15 01:11:51</sys_created_on>
+            <sys_id>f684f3b093d0c3100cbd35befaba10fc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Cameras &amp; Speakers" display_value="Cameras &amp; Speakers" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">0ae8b9ac937732100cbd35befaba104f</sys_ui_section>
+            <sys_ui_section caption="Doors &amp; Entrances" display_value="Doors &amp; Entrances" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">0ae8b9ac937732100cbd35befaba104f</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-20 19:54:51</sys_updated_on>
+            <sys_updated_on>2026-04-15 01:11:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>rear_photo_quality</element>
-            <position>7</position>
+            <element>.end_split</element>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-20 19:54:51</sys_created_on>
-            <sys_id>df3c31f093b7b2100cbd35befaba10c4</sys_id>
+            <sys_created_on>2026-04-15 01:11:51</sys_created_on>
+            <sys_id>7684f3b093d0c3100cbd35befaba10fd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Cameras &amp; Speakers" display_value="Cameras &amp; Speakers" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">0ae8b9ac937732100cbd35befaba104f</sys_ui_section>
+            <sys_ui_section caption="Doors &amp; Entrances" display_value="Doors &amp; Entrances" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">0ae8b9ac937732100cbd35befaba104f</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-20 19:54:51</sys_updated_on>
+            <sys_updated_on>2026-04-15 01:11:51</sys_updated_on>
             <sys_user/>
-            <type/>
+            <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>microphones</element>
-            <position>8</position>
+            <element>doors_entrances_notes</element>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-20 19:54:51</sys_created_on>
-            <sys_id>5f3c31f093b7b2100cbd35befaba10c5</sys_id>
+            <sys_created_on>2026-04-15 01:11:51</sys_created_on>
+            <sys_id>f284f3b093d0c3100cbd35befaba10fe</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Cameras &amp; Speakers" display_value="Cameras &amp; Speakers" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">0ae8b9ac937732100cbd35befaba104f</sys_ui_section>
+            <sys_ui_section caption="Doors &amp; Entrances" display_value="Doors &amp; Entrances" name="x_1909471_inspec_0_device" sys_domain="global" view="Default view">0ae8b9ac937732100cbd35befaba104f</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-20 19:54:51</sys_updated_on>
+            <sys_updated_on>2026-04-15 01:11:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
-            <caption>Cameras &amp; Speakers</caption>
+            <caption>Doors &amp; Entrances</caption>
             <header>false</header>
             <name>x_1909471_inspec_0_device</name>
             <roles/>
@@ -137,7 +95,7 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>0ae8b9ac937732100cbd35befaba104f</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_name>x_1909471_inspec_0_device</sys_name>
             <sys_overrides/>
             <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
@@ -145,7 +103,7 @@
             <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
             <sys_update_name>sys_ui_section_0ae8b9ac937732100cbd35befaba104f</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-20 01:01:49</sys_updated_on>
+            <sys_updated_on>2026-04-10 21:26:39</sys_updated_on>
             <sys_user/>
             <title>false</title>
             <view display_value="Default view" name="NULL">Default view</view>

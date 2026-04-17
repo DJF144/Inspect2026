@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Set Item type field automatically for mobiles</description>
+        <field>cmdb_ci</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Set Item Type</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading)
+        return;
+
+    g_form.getReference('cmdb_ci',checkName);
+    /* This grabs the record for the configuration item, then performs the below function using that record. See additional note below for usage tips. */
+
+    function checkName(ci){
+        var name = ci.name + '';
+        // Check the name of the CI using regular expressions; 
+        // Set and lock Item type field based on the CI name.
+        if (name.match(/.*blackberry.*/i) || name.match(/.*iphone.*/i) || name.match(/.*android.*/i)) {
+            g_form.setValue('item_type', 'cmdb_ci_mobile_device','Mobile Phone');
+            g_form.setReadOnly('item_type', true);
+        } else if(name.match(/.*macbook.*/i)){
+            g_form.setValue('item_type', 'cmdb_ci_computer','Laptop');
+            g_form.setReadOnly('item_type', true);
+        } else {
+            g_form.setReadOnly('item_type', false);
+        }
+    }
+
+    /***** 
+    Yes, g_form.getReference() fell from grace as a recommended practice some releases ago. However, it is still broadly used in a pinch to fetch a single record without using the rigors of GlideAJAX; a quick code search will confirm hundreds of occurrences. Use with caution! For more information: 
+
+    https://developer.servicenow.com/dev.do#!/reference/api/tokyo/client/c_GlideFormAPI#r_GlideForm-GetReference_S_F 
+    *****/
+
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-28 23:53:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>67923f16935f32100cbd35befaba1071</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Set Item Type</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_update_name>sys_script_client_67923f16935f32100cbd35befaba1071</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-03 03:06:14</sys_updated_on>
+        <table>x_1909471_inspec_0_device</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</application>
+        <file_path/>
+        <instance_id>36a568f1eb15aa5ccbdefceacad0cd7b</instance_id>
+        <instance_name>dev341845</instance_name>
+        <name>sys_script_client_67923f16935f32100cbd35befaba1071</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;Set Item type field automatically for mobiles&lt;/description&gt;&lt;field&gt;cmdb_ci&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Set Item Type&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading)
+        return;
+
+    g_form.getReference('cmdb_ci',checkName);
+    /* This grabs the record for the configuration item, then performs the below function using that record. See additional note below for usage tips. */
+
+    function checkName(ci){
+        var name = ci.name + '';
+        // Check the name of the CI using regular expressions; 
+        // Set and lock Item type field based on the CI name.
+        if (name.match(/.*blackberry.*/i) || name.match(/.*iphone.*/i) || name.match(/.*android.*/i)) {
+            g_form.setValue('item_type', 'cmdb_ci_mobile_device','Mobile Phone');
+            g_form.setReadOnly('item_type', true);
+        } else if(name.match(/.*macbook.*/i)){
+            g_form.setValue('item_type', 'cmdb_ci_computer','Laptop');
+            g_form.setReadOnly('item_type', true);
+        } else {
+            g_form.setReadOnly('item_type', false);
+        }
+    }
+
+    /***** 
+    Yes, g_form.getReference() fell from grace as a recommended practice some releases ago. However, it is still broadly used in a pinch to fetch a single record without using the rigors of GlideAJAX; a quick code search will confirm hundreds of occurrences. Use with caution! For more information: 
+
+    https://developer.servicenow.com/dev.do#!/reference/api/tokyo/client/c_GlideFormAPI#r_GlideForm-GetReference_S_F 
+    *****/
+
+}
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-02-28 23:53:42&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;67923f16935f32100cbd35befaba1071&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Set Item Type&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Inspect 2026" source="x_1909471_inspec_0"&gt;2f3eba82935fba100cbd35befaba10fe&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Inspect 2026"&gt;2f3eba82935fba100cbd35befaba10fe&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_67923f16935f32100cbd35befaba1071&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-03 03:06:14&lt;/sys_updated_on&gt;&lt;table&gt;x_1909471_inspec_0_device&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-407015825</payload_hash>
+        <record_name>Set Item Type</record_name>
+        <reverted_from/>
+        <source>32f6be9a935732100cbd35befaba1083</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-03 03:06:14</sys_created_on>
+        <sys_id>0352f6039397b6100cbd35befaba1064</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19cb1a917be0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-03 03:06:14</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>0352f6039c97b6104cb887eaf55cbe63</update_guid>
+        <update_guid_history>0352f6039c97b6104cb887eaf55cbe63:-407015825,0f133fded71f32103c91c7975684a1e3:-355106635</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 23:51:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>1e79fb9c32f142f09b16ac7149bb6840</sys_id>
+        <sys_metadata>67923f16935f32100cbd35befaba1071</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set Item Type</sys_name>
+        <sys_package display_value="Inspect 2026" source="x_1909471_inspec_0">2f3eba82935fba100cbd35befaba10fe</sys_package>
+        <sys_parent display_value="Elevators">50221e8f9353b6100cbd35befaba1030</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Inspect 2026">2f3eba82935fba100cbd35befaba10fe</sys_scope>
+        <sys_scope_delete display_value="">446d1859cdca4f34a7ecc80b8969d661</sys_scope_delete>
+        <sys_update_name>sys_script_client_67923f16935f32100cbd35befaba1071</sys_update_name>
+        <sys_update_version display_value="sys_script_client_67923f16935f32100cbd35befaba1071">0352f6039397b6100cbd35befaba1064</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 23:51:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
