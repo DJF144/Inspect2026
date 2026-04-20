@@ -16,7 +16,7 @@ https://raw.githubusercontent.com/DJF144/Inspect2026/main/Process_Flow.png
 | Table | Description |
 |---|---|
 | Order | Parent record representing a customer inspection order |
-| Elevator Inspection | Child records — one per elevator inspected within an order |
+| Elevator Inspection | Child records — one per elevator inspection within an order |
 | Company | External — Postman mock server used as external DB, retrieved via ServiceNow REST Message (GET) |
 
 
@@ -30,8 +30,8 @@ https://raw.githubusercontent.com/DJF144/Inspect2026/main/Data_Model_Diagram.png
 
 | Role | Permissions |
 |---|---|
-| Admin | Can read, write, and delete all orders regardless of assignment |
-| Fulfiller (User) | Can read and delete only orders assigned to themselves |
+| Admin | Can create, read, write, and delete all orders regardless of assignment |
+| Fulfiller (User) | Can create, read, write, and delete all orders assigned to the user |
 
 ---
 
