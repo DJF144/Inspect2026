@@ -17,6 +17,11 @@
 | Elevator Inspection | Child records — one per elevator inspected within an order |
 | Company | External — Postman mock server used as external DB, retrieved via ServiceNow REST Message (GET) |
 
+
+## Data Model Diagram
+
+https://raw.githubusercontent.com/DJF144/Inspect2026/main/Data_Model_Diagram.png
+
 ---
 
 ## Roles
