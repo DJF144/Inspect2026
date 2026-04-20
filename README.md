@@ -48,11 +48,11 @@ Company names are retrieved from a **Postman mock server** acting as an external
 
 - **Create New Order** button
 - **Dashboard** with five analytics tiles:
-  - Count of all **My Tasks** assigned to logged-in user → opens all tasks for the user and state is open
-  - Cotal of all **Critical Tasks** assigned to logged-in user → opens all tasks for the user and priority is critical
-  - Count of **Closed Completed Tasks**  assigned to logged-in user → opens all tasks for the user and state is Closed Complete
-  - Count of **Closed Incomplete Tasks**  assigned to logged-in user → opens all tasks for the user and state is open Closed Incomplete
-  - Count of **All Tasks**  assigned to logged-in user → opens all tasks for the user
+  - **My Tasks** → opens all tasks for the user and state is open
+  - **Critical Tasks** → opens all tasks for the user and priority is critical
+  - **Closed Completed Tasks** → opens all tasks for the user and state is Closed Complete
+  - **Closed Incomplete Tasks** → opens all tasks for the user and state is open Closed Incomplete
+  - **All Tasks** → opens all tasks for the user
 
 ---
 ### 2. Order Management
@@ -144,4 +144,11 @@ A **Generate PDF** UI Action is available on the Order record.
 ### 6. Send Email to Customer
 
 After generating the PDF, the email is sent automatically via a ServiceNow Notification. When the Order state is set to Closed Complete, the notification is triggered and sends the PDF report to both the customer and the inspector.
+
+
+## Required Plugins
+
+| Plugin | ID | Purpose |
+|---|---|---|
+| PDF Generation Utilities | `com.sn_pdfgeneratorutils` | Required to generate and attach the PDF report to the Order record |
 
