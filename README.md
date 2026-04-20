@@ -5,9 +5,10 @@
 **Elevator Inspection** is a scoped ServiceNow application designed to manage elevator inspection orders, perform structured on-site inspections, generate PDF reports, and email results to customers. It is built for field inspectors (Fulfillers) and supports a full inspection workflow from order creation to report delivery.
 
 ---
+
 ## Process Flow
 
-https://raw.githubusercontent.com/DJF144/Inspect2026/main/Process_Flow.png
+![Process Flow](https://raw.githubusercontent.com/DJF144/Inspect2026/main/Process_Flow.png)
 
 ---
 
@@ -19,10 +20,11 @@ https://raw.githubusercontent.com/DJF144/Inspect2026/main/Process_Flow.png
 | Elevator Inspection | Child records — one per elevator inspection within an order |
 | Company | External — Postman mock server used as external DB, retrieved via ServiceNow REST Message (GET) |
 
+---
 
 ## Data Model Diagram
 
-https://raw.githubusercontent.com/DJF144/Inspect2026/main/Data_Model_Diagram.png
+![Data Model Diagram](https://raw.githubusercontent.com/DJF144/Inspect2026/main/Data_Model_Diagram.png)
 
 ---
 
@@ -45,16 +47,18 @@ Company names are retrieved from a **Postman mock server** acting as an external
 
 ### 1. Dashboard
 
+The application dashboard provides:
 
-- **Create New Order** button
+- A **Create New Order** button
 - **Dashboard** with five analytics tiles:
-  - **My Tasks** → opens all tasks for the user and state is open
-  - **Critical Tasks** → opens all tasks for the user and priority is critical
-  - **Closed Completed Tasks** → opens all tasks for the user and state is Closed Complete
-  - **Closed Incomplete Tasks** → opens all tasks for the user and state is open Closed Incomplete
-  - **All Tasks** → opens all tasks for the user
+  - **My Tasks** — opens all tasks for the user with state Open
+  - **Critical Tasks** — opens all tasks for the user with priority Critical
+  - **Closed Complete Tasks** — opens all tasks for the user with state Closed Complete
+  - **Closed Incomplete Tasks** — opens all tasks for the user with state Closed Incomplete
+  - **All Tasks** — opens all tasks for the user
 
 ---
+
 ### 2. Order Management
 
 #### Order Form Fields
@@ -75,7 +79,6 @@ An Order is the parent of Elevator Inspections and can have multiple inspections
 ### 3. Inspection Checklist
 
 Each elevator inspection includes a structured checklist grouped into four sections. Each checklist item has a result choice: **Passed**, **Failed**, or **N/A**. Each section includes a **Notes** field (String) for free-text observations.
-
 
 #### Section 1 — General Operation
 
@@ -121,7 +124,7 @@ Each elevator inspection includes a structured checklist grouped into four secti
 
 ### 4. Image Upload
 
-Inspectors can upload images directly on each elevator inspection record. Images can be selected from the device's photo library or taken on the spot using the tablet camera. Images are stored as attachments in sys_attachment and are embedded in the generated PDF report
+Inspectors can upload images directly on each elevator inspection record. Images can be selected from the device's photo library or taken on the spot using the tablet camera. Images are stored as attachments in `sys_attachment` and are embedded in the generated PDF report.
 
 ---
 
@@ -143,8 +146,9 @@ A **Generate PDF** UI Action is available on the Order record.
 
 ### 6. Send Email to Customer
 
-After generating the PDF, the email is sent automatically via a ServiceNow Notification. When the Order state is set to Closed Complete, the notification is triggered and sends the PDF report to both the customer and the inspector.
+After generating the PDF, the email is sent automatically via a **ServiceNow Notification**. When the Order state is set to **Closed Complete**, the notification is triggered and sends the PDF report to both the customer and the inspector.
 
+---
 
 ## Required Plugins
 
