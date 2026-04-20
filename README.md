@@ -46,9 +46,11 @@ Company names are retrieved from a **Postman mock server** acting as an external
 
 - **Create New Order** button
 - **Dashboard** with five analytics tiles:
-  - Total count of all orders → opens full order list
-  - Count of **Open** orders → opens filtered list
-  - Count of **Closed** orders → opens filtered list
+  - Count of all **My Tasks** assigned to logged-in user → opens all tasks for the user and state is open
+  - Cotal of all **Critical Tasks** assigned to logged-in user → opens all tasks for the user and priority is critical
+  - Count of **Closed Completed Tasks**  assigned to logged-in user → opens all tasks for the user and state is Closed Complete
+  - Count of **Closed Incomplete Tasks**  assigned to logged-in user → opens all tasks for the user and state is open Closed Incomplete
+  - Count of **All Tasks**  assigned to logged-in user → opens all tasks for the user
 
 ---
 ### 2. Order Management
@@ -64,11 +66,14 @@ Company names are retrieved from a **Postman mock server** acting as an external
 | Assigned To | Reference (User) | Auto-populated with the logged-in user — hidden on form |
 | State | Choice | Open / Closed |
 
+An Order is the parent of Elevator Inspections and can have multiple inspections assigned.
+
 ---
 
-### 4. Inspection Checklist
+### 3. Inspection Checklist
 
 Each elevator inspection includes a structured checklist grouped into four sections. Each checklist item has a result choice: **Passed**, **Failed**, or **N/A**. Each section includes a **Notes** field (String) for free-text observations.
+
 
 #### Section 1 — General Operation
 
@@ -112,13 +117,13 @@ Each elevator inspection includes a structured checklist grouped into four secti
 
 ---
 
-### 5. Image Upload
+### 4. Image Upload
 
-Inspectors can upload images directly on each elevator inspection record. Images are stored as attachments in `sys_attachment` and are embedded in the generated PDF report.
+Inspectors can upload images directly on each elevator inspection record. Images can be selected from the device's photo library or taken on the spot using the tablet camera. Images are stored as attachments in sys_attachment and are embedded in the generated PDF report
 
 ---
 
-### 6. PDF Report Generation
+### 5. PDF Report Generation
 
 A **Generate PDF** UI Action is available on the Order record.
 
@@ -134,7 +139,7 @@ A **Generate PDF** UI Action is available on the Order record.
 
 ---
 
-### 7. Send Email to Customer
+### 6. Send Email to Customer
 
-After generating the PDF, the inspector can send an email to the customer directly from the Order record.
+After generating the PDF, the email is sent automatically via a ServiceNow Notification. When the Order state is set to Closed Complete, the notification is triggered and sends the PDF report to both the customer and the inspector.
 
